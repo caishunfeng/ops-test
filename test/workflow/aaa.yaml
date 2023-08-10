@@ -1,8 +1,8 @@
 workflowName: "aaa"
 desc: ""
-tenantName: null
+tenantName: "csf"
 timeoutMin: null
-executionStrategy: null
+executionStrategy: "PARALLEL"
 globalParams: "[]"
 labelName: null
 cardName: null
@@ -21,7 +21,7 @@ taskGitInfoList:
     :[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
     :null,\"field\":\"rawScript\"}}"
   description: null
-  taskPriority: null
+  taskPriority: "MEDIUM"
   failRetryTimes: null
   failRetryInterval: null
   timeout: null
