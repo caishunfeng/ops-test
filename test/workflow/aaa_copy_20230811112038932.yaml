@@ -1,4 +1,4 @@
-workflowName: "aaa"
+workflowName: "aaa_copy_20230811112038932"
 desc: ""
 tenantName: "csf"
 timeoutMin: null
@@ -15,7 +15,7 @@ environmentName: null
 warningGroupName: null
 estimatedEndTime: null
 taskGitInfoList:
-- taskName: "a_sn"
+- taskName: "a_sn_copy_20230811112038932"
   taskType: "SHELL"
   taskParams: "{\"localParams\":[],\"rawScript\":\"echo \\\"aaa\\\"\",\"resourceList\"\
     :[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
@@ -35,7 +35,7 @@ taskGitInfoList:
   taskGroupPriority: null
   localParams: null
   preTasks: []
-- taskName: "a"
+- taskName: "a_copy_20230811112038932"
   taskType: "SHELL"
   taskParams: "{\"localParams\":[],\"rawScript\":\"echo \\\"aaa\\\"\",\"resourceList\"\
     :[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
