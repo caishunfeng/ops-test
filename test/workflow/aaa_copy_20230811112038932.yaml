@@ -1,6 +1,6 @@
 workflowName: "aaa_copy_20230811112038932"
 desc: ""
-tenantName: "csf"
+tenantName: "default"
 timeoutMin: null
 executionStrategy: "PARALLEL"
 globalParams: "[]"
