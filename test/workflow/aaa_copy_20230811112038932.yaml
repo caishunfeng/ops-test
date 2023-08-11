@@ -1,0 +1,57 @@
+workflowName: "aaa_copy_20230811112038932"
+desc: ""
+tenantName: "default"
+timeoutMin: null
+executionStrategy: "PARALLEL"
+globalParams: "[]"
+labelName: null
+cardName: null
+timingName: null
+failureStrategy: null
+warningType: null
+processInstancePriority: null
+workerGroupName: null
+environmentName: null
+warningGroupName: null
+estimatedEndTime: null
+taskGitInfoList:
+- taskName: "a_sn_copy_20230811112038932"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"echo \\\"aaa\\\"\",\"resourceList\"\
+    :[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
+  description: null
+  taskPriority: "MEDIUM"
+  failRetryTimes: null
+  failRetryInterval: null
+  timeout: null
+  timeoutNotifyStrategy: null
+  delayTime: null
+  locationX: null
+  locationY: null
+  workerGroup: null
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []
+- taskName: "a_copy_20230811112038932"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"echo \\\"aaa\\\"\",\"resourceList\"\
+    :[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
+  description: null
+  taskPriority: "MEDIUM"
+  failRetryTimes: null
+  failRetryInterval: null
+  timeout: null
+  timeoutNotifyStrategy: null
+  delayTime: null
+  locationX: null
+  locationY: null
+  workerGroup: null
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []
