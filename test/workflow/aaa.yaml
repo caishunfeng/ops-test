@@ -1,6 +1,6 @@
 workflowName: "aaa"
 desc: ""
-tenantName: "default"
+tenantName: "csf"
 timeoutMin: null
 executionStrategy: "PARALLEL"
 globalParams: "[]"
@@ -15,7 +15,7 @@ environmentName: null
 warningGroupName: null
 estimatedEndTime: null
 taskGitInfoList:
-- taskName: "a"
+- taskName: "b"
   taskType: "SHELL"
   taskParams: "{\"localParams\":[],\"rawScript\":\"echo \\\"aaa\\\"\",\"resourceList\"\
     :[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
@@ -34,8 +34,9 @@ taskGitInfoList:
   taskGroup: null
   taskGroupPriority: null
   localParams: null
-  preTasks: []
-- taskName: "a_sn"
+  preTasks:
+  - "a"
+- taskName: "a"
   taskType: "SHELL"
   taskParams: "{\"localParams\":[],\"rawScript\":\"echo \\\"aaa\\\"\",\"resourceList\"\
     :[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
