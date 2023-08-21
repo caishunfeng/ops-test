@@ -1,18 +1,18 @@
 workflowName: "aaa"
 desc: ""
-tenantName: "default"
+tenantName: null
 timeoutMin: null
 executionStrategy: "PARALLEL"
 globalParams: "[]"
-labelName: null
+labelNames: []
 cardName: null
 timingName: null
 failureStrategy: null
 warningType: null
 processInstancePriority: null
 workerGroupName: null
-environmentName: null
-warningGroupName: null
+envName: null
+alertGroupName: null
 estimatedEndTime: null
 taskGitInfoList:
 - taskName: "a"
@@ -20,16 +20,17 @@ taskGitInfoList:
   taskParams: "{\"localParams\":[],\"rawScript\":\"echo \\\"aaa\\\"\",\"resourceList\"\
     :[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
     :null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
   description: null
   taskPriority: "MEDIUM"
-  failRetryTimes: null
-  failRetryInterval: null
-  timeout: null
+  failRetryTimes: 0
+  failRetryInterval: 0
+  timeout: 0
   timeoutNotifyStrategy: null
-  delayTime: null
+  delayTime: 0
   locationX: null
   locationY: null
-  workerGroup: null
+  workerGroup: "default"
   env: null
   taskGroup: null
   taskGroupPriority: null
@@ -40,16 +41,38 @@ taskGitInfoList:
   taskParams: "{\"localParams\":[],\"rawScript\":\"echo \\\"aaa\\\"\",\"resourceList\"\
     :[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
     :null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
   description: null
   taskPriority: "MEDIUM"
-  failRetryTimes: null
-  failRetryInterval: null
-  timeout: null
+  failRetryTimes: 0
+  failRetryInterval: 0
+  timeout: 0
   timeoutNotifyStrategy: null
-  delayTime: null
+  delayTime: 0
   locationX: null
   locationY: null
-  workerGroup: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []
+- taskName: "a_65q"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"echo \\\"aaa\\\"\",\"resourceList\"\
+    :[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: null
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 0
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
   env: null
   taskGroup: null
   taskGroupPriority: null
