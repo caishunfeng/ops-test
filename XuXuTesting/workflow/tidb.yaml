@@ -1,0 +1,114 @@
+workflowName: "tidb"
+desc: ""
+tenantName: null
+timeoutMin: null
+executionStrategy: "PARALLEL"
+globalParams: "[]"
+labelNames: []
+cardName: null
+timingName: null
+failureStrategy: null
+warningType: null
+processInstancePriority: null
+workerGroupName: null
+envName: null
+alertGroupName: null
+estimatedEndTime: null
+taskGitInfoList:
+- taskName: "create"
+  taskType: "SQL"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"type\":\"JDBC-Postgres\"\
+    ,\"datasource\":\"10724470688000\",\"database\":\"xuxutestdb\",\"sql\":\"\\ncreate\
+    \ table person(\\n \\nid int not null,\\n \\nname char(40) not null default '',\\\
+    n \\nage int not null default 0,\\n \\ninfo char(50) null,\\n \\nprimary key (id)\\\
+    n \\n);\\n\\n \",\"fieldStr\":\"sql\",\"sqlType\":\"0\",\"preStatements\":[],\"\
+    postStatements\":[],\"displayRows\":10,\"ideContentField\":{\"resourceId\":null,\"\
+    field\":\"sql\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []
+- taskName: "create_434"
+  taskType: "SQL"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"type\":\"JDBC-Postgres\"\
+    ,\"datasource\":\"10724470688000\",\"database\":\"xuxutestdb\",\"sql\":\"\\ninsert\
+    \ into person (id,name,age,info) values (1,'Green',21,'lawyer');\\n\",\"fieldStr\"\
+    :\"sql\",\"sqlType\":\"0\",\"preStatements\":[],\"postStatements\":[],\"displayRows\"\
+    :10,\"ideContentField\":{\"resourceId\":null,\"field\":\"sql\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "create"
+- taskName: "create_434_66d"
+  taskType: "SQL"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"type\":\"JDBC-Postgres\"\
+    ,\"datasource\":\"10724470688000\",\"database\":\"xuxutestdb\",\"sql\":\"select\
+    \ * from person;\",\"fieldStr\":\"sql\",\"sqlType\":\"0\",\"preStatements\":[],\"\
+    postStatements\":[],\"displayRows\":10,\"ideContentField\":{\"resourceId\":null,\"\
+    field\":\"sql\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "create_434"
+- taskName: "create_434_66d_777"
+  taskType: "SQL"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"type\":\"JDBC-Postgres\"\
+    ,\"datasource\":\"10724470688000\",\"database\":\"xuxutestdb\",\"sql\":\"DROP\
+    \ TABLE person;\",\"fieldStr\":\"sql\",\"sqlType\":\"0\",\"preStatements\":[],\"\
+    postStatements\":[],\"displayRows\":10,\"ideContentField\":{\"resourceId\":null,\"\
+    field\":\"sql\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "create_434_66d"

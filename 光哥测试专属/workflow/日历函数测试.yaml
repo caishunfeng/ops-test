@@ -1,0 +1,42 @@
+workflowName: "日历函数测试"
+desc: ""
+tenantName: null
+timeoutMin: null
+executionStrategy: "PARALLEL"
+globalParams: "[{\"prop\":\"test_data\",\"value\":\"20221027\",\"direct\":\"IN\",\"\
+  type\":\"VARCHAR\"}]"
+labelNames: []
+cardName: null
+timingName: null
+failureStrategy: null
+warningType: null
+processInstancePriority: null
+workerGroupName: null
+envName: null
+alertGroupName: null
+estimatedEndTime: null
+taskGitInfoList:
+- taskName: "shell"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[{\"prop\":\"date1\",\"direct\":\"IN\",\"type\":\"\
+    VARCHAR\",\"value\":\"$[quarter_begin_M(20221027, yyyy-MM-dd, 1, 1, mingdongtest_calendar)]\"\
+    },{\"prop\":\"date2\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"$[quarter_begin_M(${test_data},\
+    \ yyyy-MM-dd,1,1, mingdongtest_calendar)]\"}],\"rawScript\":\"echo ${date1}\\\
+    necho ${date2}\",\"resourceList\":[],\"fieldStr\":\"rawScript\",\"dataSourceList\"\
+    :[],\"ideContentField\":{\"resourceId\":null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []

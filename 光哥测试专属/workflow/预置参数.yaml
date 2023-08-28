@@ -1,4 +1,4 @@
-workflowName: "2-工作流定义_上线_运行"
+workflowName: "预置参数"
 desc: ""
 tenantName: null
 timeoutMin: null
@@ -17,9 +17,9 @@ estimatedEndTime: null
 taskGitInfoList:
 - taskName: "shell"
   taskType: "SHELL"
-  taskParams: "{\"localParams\":[],\"rawScript\":\"echo '自动化casedatedate2222222'\"\
-    ,\"resourceList\":[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\"\
-    :{\"resourceId\":null,\"field\":\"rawScript\"}}"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"echo ${testkey2}\",\"resourceList\"\
+    :[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
   resourceFiles: null
   description: ""
   taskPriority: "MEDIUM"
