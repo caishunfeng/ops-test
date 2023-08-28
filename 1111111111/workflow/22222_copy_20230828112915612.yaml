@@ -1,11 +1,10 @@
-workflowName: "66666"
+workflowName: "22222_copy_20230828112915612"
 desc: ""
 tenantName: null
 timeoutMin: null
 executionStrategy: "PARALLEL"
 globalParams: "[]"
-labelNames:
-- "标签2"
+labelNames: []
 cardName: null
 timingName: null
 failureStrategy: null
@@ -16,11 +15,11 @@ envName: null
 alertGroupName: null
 estimatedEndTime: null
 taskGitInfoList:
-- taskName: "shell"
+- taskName: "shell_copy_20230828112915612"
   taskType: "SHELL"
-  taskParams: "{\"localParams\":[],\"rawScript\":\"echo date\",\"resourceList\":[],\"\
-    fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
-    :null,\"field\":\"rawScript\"}}"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"date\",\"resourceList\":[],\"fieldStr\"\
+    :\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\":null,\"\
+    field\":\"rawScript\"}}"
   resourceFiles: null
   description: ""
   taskPriority: "MEDIUM"
