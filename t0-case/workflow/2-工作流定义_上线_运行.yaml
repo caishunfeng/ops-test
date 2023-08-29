@@ -17,15 +17,9 @@ estimatedEndTime: null
 taskGitInfoList:
 - taskName: "shell"
   taskType: "SHELL"
-<<<<<<< HEAD
   taskParams: "{\"localParams\":[],\"rawScript\":\"echo '自动化casedatedate2222222'\"\
     ,\"resourceList\":[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\"\
     :{\"resourceId\":null,\"field\":\"rawScript\"}}"
-=======
-  taskParams: "{\"localParams\":[],\"rawScript\":\"echo '自动化casedatedate11111111'\",\"resourceList\"\
-    :[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
-    :null,\"field\":\"rawScript\"}}"
->>>>>>> branch 'master1' of https://github.com/caishunfeng/ops-test.git
   resourceFiles: null
   description: ""
   taskPriority: "MEDIUM"
