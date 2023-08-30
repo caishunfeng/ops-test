@@ -1,0 +1,49 @@
+workflowName: "任务运行策略-参数传递2"
+desc: ""
+tenantName: null
+timeoutMin: null
+executionStrategy: "PARALLEL"
+globalParams: "[]"
+labelNames: []
+cardName: null
+timingName: null
+failureStrategy: null
+warningType: null
+processInstancePriority: null
+workerGroupName: null
+envName: null
+alertGroupName: null
+estimatedEndTime: null
+taskGitInfoList:
+- taskName: "shell"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[{\"prop\":\"T1\",\"direct\":\"IN\",\"type\":\"VARCHAR\"\
+    ,\"value\":\"abc\"},{\"prop\":\"T2\",\"direct\":\"IN\",\"type\":\"INTEGER\",\"\
+    value\":\"abc\"},{\"prop\":\"T3\",\"direct\":\"IN\",\"type\":\"LONG\",\"value\"\
+    :\"abc\"},{\"prop\":\"T4\",\"direct\":\"IN\",\"type\":\"FLOAT\",\"value\":\"abc\"\
+    },{\"prop\":\"T5\",\"direct\":\"IN\",\"type\":\"DOUBLE\",\"value\":\"abc\"},{\"\
+    prop\":\"T6\",\"direct\":\"IN\",\"type\":\"DATE\",\"value\":\"2022//02//02\"},{\"\
+    prop\":\"T7\",\"direct\":\"IN\",\"type\":\"TIME\",\"value\":\"2022//02//02 00//00//00\"\
+    },{\"prop\":\"T8\",\"direct\":\"IN\",\"type\":\"TIMESTAMP\",\"value\":\"abc\"\
+    },{\"prop\":\"T9\",\"direct\":\"IN\",\"type\":\"BOOLEAN\",\"value\":\"123\"},{\"\
+    prop\":\"T10\",\"direct\":\"IN\",\"type\":\"LIST\",\"value\":\"[123\"}],\"rawScript\"\
+    :\"echo ${T1}\\necho ${T2}\\necho ${T3}\\necho ${T4}\\necho ${T5}\\necho ${T6}\\\
+    necho ${T7}\\necho ${T8}\\necho ${T9}\\necho ${T10}\",\"resourceList\":[],\"fieldStr\"\
+    :\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\":null,\"\
+    field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []
