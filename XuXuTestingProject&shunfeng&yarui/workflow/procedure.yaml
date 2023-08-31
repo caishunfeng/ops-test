@@ -1,0 +1,62 @@
+workflowName: "procedure"
+desc: ""
+tenantName: null
+timeoutMin: null
+executionStrategy: "PARALLEL"
+globalParams: "[]"
+labelNames: []
+cardName: null
+timingName: null
+failureStrategy: null
+warningType: null
+processInstancePriority: null
+workerGroupName: null
+envName: null
+alertGroupName: null
+estimatedEndTime: null
+taskGitInfoList:
+- taskName: "procedure"
+  taskType: "PROCEDURE"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"type\":\"JDBC-Mysql\",\"\
+    datasource\":\"10647181688064\",\"database\":\"ws1\",\"method\":\"create table\
+    \ test_ds_tb\\n(\\nid INT(11),\\nname VARCHAR(25),\\nage INT(5)\\n);\",\"fieldStr\"\
+    :\"method\",\"ideContentField\":{\"resourceId\":null,\"field\":\"method\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []
+- taskName: "procedure_3be"
+  taskType: "PROCEDURE"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"type\":\"JDBC-Mysql\",\"\
+    datasource\":\"10647181688064\",\"database\":\"ws1\",\"method\":\"drop table test_ds_tb;\"\
+    ,\"fieldStr\":\"method\",\"ideContentField\":{\"resourceId\":null,\"field\":\"\
+    method\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "procedure"

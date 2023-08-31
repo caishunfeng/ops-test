@@ -1,0 +1,60 @@
+workflowName: "任务运行策略 114+"
+desc: ""
+tenantName: null
+timeoutMin: null
+executionStrategy: "SERIAL_PRIORITY"
+globalParams: "[]"
+labelNames: []
+cardName: null
+timingName: null
+failureStrategy: null
+warningType: null
+processInstancePriority: null
+workerGroupName: null
+envName: null
+alertGroupName: null
+estimatedEndTime: null
+taskGitInfoList:
+- taskName: "shell1"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"sleep 5\",\"resourceList\":[],\"\
+    fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []
+- taskName: "shell2"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"sleep 5\",\"resourceList\":[],\"\
+    fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "shell1"

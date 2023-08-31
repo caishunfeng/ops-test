@@ -1,9 +1,10 @@
-workflowName: "test"
+workflowName: "工作流数量61+"
 desc: ""
 tenantName: null
 timeoutMin: null
 executionStrategy: "PARALLEL"
-globalParams: "[]"
+globalParams: "[{\"prop\":\"date\",\"value\":\"${system.datetime}\",\"direct\":\"\
+  IN\",\"type\":\"VARCHAR\"}]"
 labelNames: []
 cardName: null
 timingName: null
@@ -15,11 +16,11 @@ envName: null
 alertGroupName: null
 estimatedEndTime: null
 taskGitInfoList:
-- taskName: "shell"
+- taskName: "echo"
   taskType: "SHELL"
-  taskParams: "{\"localParams\":[],\"rawScript\":\"echo \\\"date:\\\"\\n\\ndate\\\
-    n\\ndate\\n\\ndate\",\"resourceList\":[],\"fieldStr\":\"rawScript\",\"dataSourceList\"\
-    :[],\"ideContentField\":{\"resourceId\":null,\"field\":\"rawScript\"}}"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"echo ${date}\",\"resourceList\"\
+    :[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
   resourceFiles: null
   description: ""
   taskPriority: "MEDIUM"
@@ -31,7 +32,7 @@ taskGitInfoList:
   locationX: null
   locationY: null
   workerGroup: "default"
-  env: null
+  env: "env-光哥"
   taskGroup: null
   taskGroupPriority: null
   localParams: null

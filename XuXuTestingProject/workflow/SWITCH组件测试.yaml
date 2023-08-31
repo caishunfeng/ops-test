@@ -1,0 +1,138 @@
+workflowName: "SWITCH组件测试"
+desc: ""
+tenantName: null
+timeoutMin: null
+executionStrategy: "PARALLEL"
+globalParams: "[]"
+labelNames: []
+cardName: null
+timingName: null
+failureStrategy: null
+warningType: null
+processInstancePriority: null
+workerGroupName: null
+envName: null
+alertGroupName: null
+estimatedEndTime: null
+taskGitInfoList:
+- taskName: "if"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[{\"prop\":\"id\",\"direct\":\"OUT\",\"type\":\"VARCHAR\"\
+    ,\"value\":\"\"}],\"rawScript\":\"echo \\\"==============start =========\\\"\\\
+    n\\necho \\\"if id ==1 echo shell 1 \\\"\\n\\necho \\\"if id ==2 echo shell 2\
+    \ \\\"\\n\\necho \\\"if id ==3 echo shell 3 \\\"\\n\\necho \\\"now id ==3 \\\"\
+    \\n\\n\\necho '${setValue(id=4)}'\\n\\necho \\\"==============end =========\\\"\
+    \",\"resourceList\":[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\"\
+    :{\"resourceId\":null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []
+- taskName: "switch"
+  taskType: "SWITCH"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"\",\"resourceList\":[],\"switchResult\"\
+    :{\"dependTaskList\":[{\"condition\":\"${id}  == 1\",\"nextNode\":10746671667328},{\"\
+    condition\":\"${id}  == 2\",\"nextNode\":10746673881088},{\"condition\":\"${id}\
+    \  == 3\",\"nextNode\":10746675773568}],\"nextNode\":10746675773568},\"ideContentField\"\
+    :{\"resourceId\":null,\"field\":null}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: null
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "if"
+- taskName: "shell1"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[{\"prop\":\"id\",\"direct\":\"OUT\",\"type\":\"VARCHAR\"\
+    ,\"value\":\"\"}],\"rawScript\":\"echo \\\"===========start =======\\\"\\n\\n\\\
+    necho \\\"shell 1\\\"\\n\\necho \\\"===========end =======\\\"\",\"resourceList\"\
+    :[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "switch"
+- taskName: "shell2"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[{\"prop\":\"id\",\"direct\":\"OUT\",\"type\":\"VARCHAR\"\
+    ,\"value\":\"\"}],\"rawScript\":\"echo \\\"===========start =======\\\"\\n\\n\\\
+    necho \\\"shell 2\\\"\\n\\necho \\\"===========end =======\\\"\",\"resourceList\"\
+    :[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "switch"
+- taskName: "shell3"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[{\"prop\":\"id\",\"direct\":\"OUT\",\"type\":\"VARCHAR\"\
+    ,\"value\":\"\"}],\"rawScript\":\"echo \\\"===========start =======\\\"\\n\\n\\\
+    necho \\\"shell 3\\\"\\n\\necho \\\"===========end =======\\\"\",\"resourceList\"\
+    :[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "switch"

@@ -1,0 +1,209 @@
+workflowName: "多行SQL"
+desc: ""
+tenantName: null
+timeoutMin: null
+executionStrategy: "PARALLEL"
+globalParams: "[]"
+labelNames: []
+cardName: null
+timingName: null
+failureStrategy: null
+warningType: null
+processInstancePriority: null
+workerGroupName: null
+envName: null
+alertGroupName: null
+estimatedEndTime: null
+taskGitInfoList:
+- taskName: "sql1"
+  taskType: "SQL"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"type\":\"JDBC-Mysql\",\"\
+    datasource\":\"10647181688064\",\"database\":\"ws1\",\"sql\":\"create table mingdongtest1(id\
+    \ int primary key,name varchar(20));\\ninsert into mingdongtest1 (id,name) value(1,'gage');\\\
+    nselect * from mingdongtest1 where id = 1;\",\"fieldStr\":\"sql\",\"sqlType\"\
+    :\"0\",\"preStatements\":[],\"postStatements\":[],\"displayRows\":10,\"ideContentField\"\
+    :{\"resourceId\":null,\"field\":\"sql\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []
+- taskName: "sql1_7e6"
+  taskType: "SQL"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"type\":\"JDBC-Mysql\",\"\
+    datasource\":\"10647181688064\",\"database\":\"ws1\",\"sql\":\"create table mingdongtest2(id\
+    \ int primary key,name varchar(20));\\ninsert into mingdongtest2 (id,name) value(1,'gage'),(2,'gega');\\\
+    nupdate mingdongtest2 set name = \\\"test_gega\\\" where id = 2;\\nselect * from\
+    \ mingdongtest2 where id = 2;\",\"fieldStr\":\"sql\",\"sqlType\":\"0\",\"preStatements\"\
+    :[],\"postStatements\":[],\"displayRows\":10,\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"sql\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []
+- taskName: "sql1_7e6_4ts"
+  taskType: "SQL"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"type\":\"JDBC-Mysql\",\"\
+    datasource\":\"10647181688064\",\"database\":\"ws1\",\"sql\":\"create table mingdongtest3(id\
+    \ int primary key,name varchar(20));\\ninsert into mingdongtest3 (id,name) value(1,'gage'),(2,'gega');\\\
+    nupdate mingdongtest3 set name = \\\"test_gega\\\" where id = 2;\\nselect (case\
+    \ when id =2 then name end) as pname from mingdongtest2;\",\"fieldStr\":\"sql\"\
+    ,\"sqlType\":\"0\",\"preStatements\":[],\"postStatements\":[],\"displayRows\"\
+    :10,\"ideContentField\":{\"resourceId\":null,\"field\":\"sql\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []
+- taskName: "sql1_7e6_4ts_1lt"
+  taskType: "SQL"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"type\":\"JDBC-Mysql\",\"\
+    datasource\":\"10647181688064\",\"database\":\"ws1\",\"sql\":\"create table mingdongtest5(id\
+    \ int primary key,name varchar(20));\\ninsert into mingdongtest5 (id,name) value(1,'gage'),(2,'gega');\\\
+    nupdate mingdongtest5 set name = \\\"test_gega\\\" where id = 2;\\nalter table\
+    \ mingdongtest5 add date_time date;\\nselect * from mingdongtest5;\\nupdate mingdongtest5\
+    \ set date_time = now();\\nselect * from mingdongtest5;\\nselect (case when id\
+    \ =2 then name end) as pname,unix_timestamp(date_time) as ptime from mingdongtest5\
+    \ where id in (2,3);\\nalter table mingdongtest5 add gender varchar(20);\\nshow\
+    \ create table mingdongtest5;\\nalter table mingdongtest5 modify gender char(15);\\\
+    nshow create table mingdongtest5;\",\"fieldStr\":\"sql\",\"sqlType\":\"0\",\"\
+    preStatements\":[],\"postStatements\":[],\"displayRows\":10,\"ideContentField\"\
+    :{\"resourceId\":null,\"field\":\"sql\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []
+- taskName: "sql1_7e6_4ts_1lt_6k7"
+  taskType: "SQL"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"type\":\"JDBC-Mysql\",\"\
+    datasource\":\"10647181688064\",\"database\":\"ws1\",\"sql\":\"\\ndrop table mingdongtest5;\"\
+    ,\"fieldStr\":\"sql\",\"sqlType\":\"0\",\"preStatements\":[],\"postStatements\"\
+    :[],\"displayRows\":10,\"ideContentField\":{\"resourceId\":null,\"field\":\"sql\"\
+    }}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "sql1_7e6_4ts_1lt"
+- taskName: "sql1_7e6_4ts_1lt_2t0"
+  taskType: "SQL"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"type\":\"JDBC-Mysql\",\"\
+    datasource\":\"10647181688064\",\"database\":\"ws1\",\"sql\":\"drop table if exists\
+    \ `user_profile`;\\ndrop table if  exists `question_practice_detail`;\\ndrop table\
+    \ if  exists `question_detail`;\\nCREATE TABLE `user_profile` (\\n`id` int NOT\
+    \ NULL,\\n`device_id` int NOT NULL,\\n`gender` varchar(14) NOT NULL,\\n`age` int\
+    \ ,\\n`university` varchar(32) NOT NULL,\\n`gpa` float,\\n`active_days_within_30`\
+    \ int ,\\n`question_cnt` int ,\\n`answer_cnt` int\\n);\\nCREATE TABLE `question_practice_detail`\
+    \ (\\n`id` int NOT NULL,\\n`device_id` int NOT NULL,\\n`question_id`int NOT NULL,\\\
+    n`result` varchar(32) NOT NULL\\n);\\nCREATE TABLE `question_detail` (\\n`id`\
+    \ int NOT NULL,\\n`question_id`int NOT NULL,\\n`difficult_level` varchar(32) NOT\
+    \ NULL\\n);\\n \\nINSERT INTO user_profile VALUES(1,2138,'male',21,'北京大学',3.4,7,2,12);\\\
+    nINSERT INTO user_profile VALUES(2,3214,'male',null,'复旦大学',4.0,15,5,25);\\nINSERT\
+    \ INTO user_profile VALUES(3,6543,'female',20,'北京大学',3.2,12,3,30);\\nINSERT INTO\
+    \ user_profile VALUES(4,2315,'female',23,'浙江大学',3.6,5,1,2);\\nINSERT INTO user_profile\
+    \ VALUES(5,5432,'male',25,'山东大学',3.8,20,15,70);\\nINSERT INTO user_profile VALUES(6,2131,'male',28,'山\
+    东大学',3.3,15,7,13);\\nINSERT INTO user_profile VALUES(7,4321,'male',28,'复旦大学',3.6,9,6,52);\\\
+    nINSERT INTO question_practice_detail VALUES(1,2138,111,'wrong');\\nINSERT INTO\
+    \ question_practice_detail VALUES(2,3214,112,'wrong');\\nINSERT INTO question_practice_detail\
+    \ VALUES(3,3214,113,'wrong');\\nINSERT INTO question_practice_detail VALUES(4,6543,111,'right');\\\
+    nINSERT INTO question_practice_detail VALUES(5,2315,115,'right');\\nINSERT INTO\
+    \ question_practice_detail VALUES(6,2315,116,'right');\\nINSERT INTO question_practice_detail\
+    \ VALUES(7,2315,117,'wrong');\\nINSERT INTO question_practice_detail VALUES(8,5432,117,'wrong');\\\
+    nINSERT INTO question_practice_detail VALUES(9,5432,112,'wrong');\\nINSERT INTO\
+    \ question_practice_detail VALUES(10,2131,113,'right');\\nINSERT INTO question_practice_detail\
+    \ VALUES(11,5432,113,'wrong');\\nINSERT INTO question_practice_detail VALUES(12,2315,115,'right');\\\
+    nINSERT INTO question_practice_detail VALUES(13,2315,116,'right');\\nINSERT INTO\
+    \ question_practice_detail VALUES(14,2315,117,'wrong');\\nINSERT INTO question_practice_detail\
+    \ VALUES(15,5432,117,'wrong');\\nINSERT INTO question_practice_detail VALUES(16,5432,112,'wrong');\\\
+    nINSERT INTO question_practice_detail VALUES(17,2131,113,'right');\\nINSERT INTO\
+    \ question_practice_detail VALUES(18,5432,113,'wrong');\\nINSERT INTO question_practice_detail\
+    \ VALUES(19,2315,117,'wrong');\\nINSERT INTO question_practice_detail VALUES(20,5432,117,'wrong');\\\
+    nINSERT INTO question_practice_detail VALUES(21,5432,112,'wrong');\\nINSERT INTO\
+    \ question_practice_detail VALUES(22,2131,113,'right');\\nINSERT INTO question_practice_detail\
+    \ VALUES(23,5432,113,'wrong');\\nINSERT INTO question_detail VALUES(1,111,'hard');\\\
+    nINSERT INTO question_detail VALUES(2,112,'medium');\\nINSERT INTO question_detail\
+    \ VALUES(3,113,'easy');\\nINSERT INTO question_detail VALUES(4,115,'easy');\\\
+    nINSERT INTO question_detail VALUES(5,116,'medium');\\nINSERT INTO question_detail\
+    \ VALUES(6,117,'easy');\\n \\n \\nSELECT distinct up.device_id,up.gender,up.age,up.gpa,up.university\
+    \ FROM user_profile up\\nLEFT JOIN question_practice_detail qd ON up.device_id=\
+    \ qd.device_id\\n WHERE up.university = \\\"山东大学\\\" OR up.gender = \\\"male\\\
+    \"\\n ORDER BY up.university desc,up.gender desc;\\n \\n \\nselect device_id ,\
+    \ gender , age , gpa from user_profile where university = '山东大学'\\nUNION ALL\\\
+    nselect device_id , gender , age , gpa from user_profile where gender = 'male';\"\
+    ,\"fieldStr\":\"sql\",\"sqlType\":\"0\",\"preStatements\":[],\"postStatements\"\
+    :[],\"displayRows\":10,\"ideContentField\":{\"resourceId\":null,\"field\":\"sql\"\
+    }}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []

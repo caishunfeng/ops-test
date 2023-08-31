@@ -1,4 +1,4 @@
-workflowName: "test"
+workflowName: "任务运行策略 124+"
 desc: ""
 tenantName: null
 timeoutMin: null
@@ -17,9 +17,9 @@ estimatedEndTime: null
 taskGitInfoList:
 - taskName: "shell"
   taskType: "SHELL"
-  taskParams: "{\"localParams\":[],\"rawScript\":\"echo \\\"date:\\\"\\n\\ndate\\\
-    n\\ndate\\n\\ndate\",\"resourceList\":[],\"fieldStr\":\"rawScript\",\"dataSourceList\"\
-    :[],\"ideContentField\":{\"resourceId\":null,\"field\":\"rawScript\"}}"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"echo 123123\",\"resourceList\"\
+    :[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
   resourceFiles: null
   description: ""
   taskPriority: "MEDIUM"

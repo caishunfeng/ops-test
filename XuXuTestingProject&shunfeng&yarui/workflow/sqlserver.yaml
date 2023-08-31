@@ -1,0 +1,115 @@
+workflowName: "sqlserver"
+desc: ""
+tenantName: null
+timeoutMin: null
+executionStrategy: "PARALLEL"
+globalParams: "[]"
+labelNames: []
+cardName: null
+timingName: null
+failureStrategy: null
+warningType: null
+processInstancePriority: null
+workerGroupName: null
+envName: null
+alertGroupName: null
+estimatedEndTime: null
+taskGitInfoList:
+- taskName: "create"
+  taskType: "SQL"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"type\":\"JDBC-SQLServer\"\
+    ,\"datasource\":\"10724528323456\",\"database\":\"xuxutestdb\",\"sql\":\" create\
+    \ table student\\n(\\n    stuId int primary key,\\n    stuName varchar(20),\\\
+    n    stuAge int,\\n    birthDay datetime,\\n    stuAddress varchar(100)\\n)\"\
+    ,\"fieldStr\":\"sql\",\"sqlType\":\"0\",\"preStatements\":[],\"postStatements\"\
+    :[],\"displayRows\":10,\"ideContentField\":{\"resourceId\":null,\"field\":\"sql\"\
+    }}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []
+- taskName: "create_2u4"
+  taskType: "SQL"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"type\":\"JDBC-SQLServer\"\
+    ,\"datasource\":\"10724528323456\",\"database\":\"xuxutestdb\",\"sql\":\"insert\
+    \ into student(stuId,stuName,stuAge,birthDay,stuAddress) values(1,'张三',30,'1985-01-01','河\
+    南')\\n\\n \",\"fieldStr\":\"sql\",\"sqlType\":\"0\",\"preStatements\":[],\"postStatements\"\
+    :[],\"displayRows\":10,\"ideContentField\":{\"resourceId\":null,\"field\":\"sql\"\
+    }}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "create"
+- taskName: "create_2u4_6l0"
+  taskType: "SQL"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"type\":\"JDBC-SQLServer\"\
+    ,\"datasource\":\"10724528323456\",\"database\":\"xuxutestdb\",\"sql\":\"select\
+    \ * from student\",\"fieldStr\":\"sql\",\"sqlType\":\"0\",\"preStatements\":[],\"\
+    postStatements\":[],\"displayRows\":10,\"ideContentField\":{\"resourceId\":null,\"\
+    field\":\"sql\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "create_2u4"
+- taskName: "create_2u4_6l0_ir"
+  taskType: "SQL"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"type\":\"JDBC-SQLServer\"\
+    ,\"datasource\":\"10724528323456\",\"database\":\"xuxutestdb\",\"sql\":\"DROP\
+    \ TABLE student\",\"fieldStr\":\"sql\",\"sqlType\":\"0\",\"preStatements\":[],\"\
+    postStatements\":[],\"displayRows\":10,\"ideContentField\":{\"resourceId\":null,\"\
+    field\":\"sql\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "create_2u4_6l0"

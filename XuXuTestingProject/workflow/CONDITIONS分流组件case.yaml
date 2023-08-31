@@ -1,0 +1,156 @@
+workflowName: "CONDITIONS分流组件case"
+desc: ""
+tenantName: null
+timeoutMin: null
+executionStrategy: "PARALLEL"
+globalParams: "[]"
+labelNames: []
+cardName: null
+timingName: null
+failureStrategy: null
+warningType: null
+processInstancePriority: null
+workerGroupName: null
+envName: null
+alertGroupName: null
+estimatedEndTime: null
+taskGitInfoList:
+- taskName: "if1"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"echo \\\"=============if1 start===============\\\
+    \"\\n\\necho \\\"shell 1\\\"\\n\\necho \\\"=============if1 end===============\\\
+    \"\",\"resourceList\":[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\"\
+    :{\"resourceId\":null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []
+- taskName: "if2"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"\\nhhh\\n\",\"resourceList\":[],\"\
+    fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []
+- taskName: "if3"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"echo \\\"=============if1 start===============\\\
+    \"\\n\\necho \\\"shell 1\\\"\\n\\necho \\\"=============if1 end===============\\\
+    \"\",\"resourceList\":[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\"\
+    :{\"resourceId\":null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []
+- taskName: "if5"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"echo \\\"==============shell3 start\
+    \ ============\\\"\\n\\necho \\\"shell 3\\\"\\n\\necho \\\"==============shell3\
+    \ end ==============\\\"\",\"resourceList\":[],\"fieldStr\":\"rawScript\",\"dataSourceList\"\
+    :[],\"ideContentField\":{\"resourceId\":null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "分流"
+- taskName: "if4"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"echo \\\"==============shell3 start\
+    \ ============\\\"\\n\\necho \\\"shell 3\\\"\\n\\necho \\\"==============shell3\
+    \ end ==============\\\"\",\"resourceList\":[],\"fieldStr\":\"rawScript\",\"dataSourceList\"\
+    :[],\"ideContentField\":{\"resourceId\":null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "分流"
+- taskName: "分流"
+  taskType: "CONDITIONS"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"dependence\":{\"relation\"\
+    :\"AND\",\"dependTaskList\":[{\"relation\":\"AND\",\"dependItemList\":[{\"depTaskCode\"\
+    :10746151977728,\"status\":\"SUCCESS\"},{\"depTaskCode\":10746228926464,\"status\"\
+    :\"SUCCESS\"}]},{\"relation\":\"AND\",\"dependItemList\":[{\"depTaskCode\":10746234746368,\"\
+    status\":\"SUCCESS\"}]}]},\"conditionResult\":{\"successNode\":[10746237559808],\"\
+    failedNode\":[10746239325824]},\"ideContentField\":{\"resourceId\":null,\"field\"\
+    :null}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: null
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "if1"
+  - "if2"
+  - "if3"
