@@ -17,7 +17,7 @@ estimatedEndTime: null
 taskGitInfoList:
 - taskName: "1111"
   taskType: "SHELL"
-  taskParams: "{\"localParams\":[],\"rawScript\":\"echo 111\",\"resourceList\":[],\"\
+  taskParams: "{\"localParams\":[],\"rawScript\":\"echo 1112\",\"resourceList\":[],\"\
     fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
     :null,\"field\":\"rawScript\"}}"
   resourceFiles: null
