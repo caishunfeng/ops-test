@@ -1,0 +1,40 @@
+workflowName: "全局参数为空时"
+desc: ""
+tenantName: null
+timeoutMin: null
+executionStrategy: "PARALLEL"
+globalParams: "[{\"prop\":\"abc\",\"value\":null,\"direct\":\"OUT\",\"type\":\"VARCHAR\"\
+  }]"
+labelNames: []
+cardName: null
+timingName: null
+failureStrategy: null
+warningType: null
+processInstancePriority: null
+workerGroupName: null
+envName: null
+alertGroupName: null
+estimatedEndTime: null
+taskGitInfoList:
+- taskName: "1"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[{\"prop\":\"abc\",\"direct\":\"OUT\",\"type\":\"\
+    VARCHAR\",\"value\":\"1\"}],\"rawScript\":\"echo 1\",\"resourceList\":[],\"fieldStr\"\
+    :\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\":null,\"\
+    field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []

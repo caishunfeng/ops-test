@@ -1,0 +1,62 @@
+workflowName: "dynamic1+"
+desc: ""
+tenantName: null
+timeoutMin: null
+executionStrategy: "PARALLEL"
+globalParams: "[]"
+labelNames: []
+cardName: null
+timingName: null
+failureStrategy: null
+warningType: null
+processInstancePriority: null
+workerGroupName: null
+envName: null
+alertGroupName: null
+estimatedEndTime: null
+taskGitInfoList:
+- taskName: "dynamic"
+  taskType: "DYNAMIC"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"processDefinitionCode\":10756356474240,\"\
+    maxNumOfSubWorkflowInstances\":1024,\"degreeOfParallelism\":4,\"filterCondition\"\
+    :\"9\",\"listParameters\":[{\"name\":\"name1\",\"value\":\"1,2\",\"separator\"\
+    :\",\",\"disabled\":true},{\"name\":\"name2\",\"value\":\"6.7\",\"separator\"\
+    :\".\"}],\"ideContentField\":{\"resourceId\":null,\"field\":null}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: "env-光哥"
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []
+- taskName: "shell-out"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"echo '${dynamic.out(dynamic)}'\"\
+    ,\"resourceList\":[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\"\
+    :{\"resourceId\":null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "dynamic"
