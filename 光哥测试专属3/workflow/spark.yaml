@@ -17,11 +17,12 @@ estimatedEndTime: null
 taskGitInfoList:
 - taskName: "spark"
   taskType: "SPARK"
-  taskParams: "{\"localParams\":[],\"resourceList\":[],\"fieldStr\":\"rawScript\"\
-    ,\"programType\":\"JAVA\",\"mainClass\":\"org.apache.spark.examples.SparkPi \"\
-    ,\"mainJar\":{\"id\":13},\"deployMode\":\"local\",\"appName\":\"1\",\"driverCores\"\
-    :1,\"driverMemory\":\"512M\",\"numExecutors\":2,\"executorMemory\":\"2G\",\"executorCores\"\
-    :2,\"ideContentField\":{\"resourceId\":null,\"field\":\"rawScript\"}}"
+  taskParams: "{\"localParams\":[],\"resourceList\":[{\"id\":13,\"resourceName\":null,\"\
+    res\":null}],\"fieldStr\":\"rawScript\",\"programType\":\"JAVA\",\"mainClass\"\
+    :\"org.apache.spark.examples.SparkPi \",\"mainJar\":{\"id\":13},\"deployMode\"\
+    :\"local\",\"appName\":\"1\",\"driverCores\":1,\"driverMemory\":\"512M\",\"numExecutors\"\
+    :2,\"executorMemory\":\"2G\",\"executorCores\":2,\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
   resourceFiles:
   - "/spark-examples_2.11-2.4.8.jar"
   description: ""

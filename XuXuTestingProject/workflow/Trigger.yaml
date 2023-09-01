@@ -101,3 +101,24 @@ taskGitInfoList:
   taskGroupPriority: null
   localParams: null
   preTasks: []
+- taskName: "file_copy"
+  taskType: "SURVEIL"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"interval\":5,\"scanType\"\
+    :1,\"filePath\":\"/data/whalestudio/tool/deploy.sh\",\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":null}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []
