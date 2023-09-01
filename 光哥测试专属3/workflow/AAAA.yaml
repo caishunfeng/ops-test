@@ -1,0 +1,248 @@
+workflowName: "AAAA"
+desc: ""
+tenantName: null
+timeoutMin: null
+executionStrategy: "PARALLEL"
+globalParams: "[]"
+labelNames: []
+cardName: null
+timingName: null
+failureStrategy: null
+warningType: null
+processInstancePriority: null
+workerGroupName: null
+envName: null
+alertGroupName: null
+estimatedEndTime: null
+taskGitInfoList:
+- taskName: "A"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"sleep 5\",\"resourceList\":[],\"\
+    fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: "队列测试"
+  taskGroupPriority: 1
+  localParams: null
+  preTasks: []
+- taskName: "A_5vh"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"sleep 5\",\"resourceList\":[],\"\
+    fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: "队列测试"
+  taskGroupPriority: 1
+  localParams: null
+  preTasks: []
+- taskName: "A_5vh_2sy"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"sleep 5\",\"resourceList\":[],\"\
+    fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: "队列测试"
+  taskGroupPriority: 1
+  localParams: null
+  preTasks: []
+- taskName: "A_5vh_2sy_1at"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"sleep 5\",\"resourceList\":[],\"\
+    fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: "队列测试"
+  taskGroupPriority: 1
+  localParams: null
+  preTasks: []
+- taskName: "A_5vh_2sy_1at_3ie"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"sleep 5\",\"resourceList\":[],\"\
+    fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: "队列测试"
+  taskGroupPriority: 1
+  localParams: null
+  preTasks: []
+- taskName: "A_5vh_2sy_1at_3ie_3md"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"sleep 5\",\"resourceList\":[],\"\
+    fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: "队列测试"
+  taskGroupPriority: 1
+  localParams: null
+  preTasks: []
+- taskName: "A_5vh_2sy_1at_3ie_3md_2wh"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"sleep 5\",\"resourceList\":[],\"\
+    fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: "队列测试"
+  taskGroupPriority: 1
+  localParams: null
+  preTasks: []
+- taskName: "A_5vh_2sy_1at_3ie_3md_2wh_34d"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"sleep 5\",\"resourceList\":[],\"\
+    fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: "队列测试"
+  taskGroupPriority: 1
+  localParams: null
+  preTasks: []
+- taskName: "A_5vh_2sy_1at_3ie_3md_2wh_34d_5mq"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"sleep 5\",\"resourceList\":[],\"\
+    fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: "队列测试"
+  taskGroupPriority: 1
+  localParams: null
+  preTasks: []
+- taskName: "A_5vh_2sy_1at_3ie_3md_2wh_34d_5mq_6nr"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"sleep 5\",\"resourceList\":[],\"\
+    fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: "队列测试"
+  taskGroupPriority: 1
+  localParams: null
+  preTasks: []
+- taskName: "A_5vh_2sy_1at_3ie_3md_2wh_34d_5mq_6nr_5yv"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"sleep 5\",\"resourceList\":[],\"\
+    fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: "队列测试"
+  taskGroupPriority: 1
+  localParams: null
+  preTasks: []
