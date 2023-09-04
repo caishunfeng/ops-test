@@ -1,0 +1,211 @@
+workflowName: "向前向后运行"
+desc: ""
+tenantName: null
+timeoutMin: null
+executionStrategy: "PARALLEL"
+globalParams: "[]"
+labelNames: []
+cardName: null
+timingName: null
+failureStrategy: null
+warningType: null
+processInstancePriority: null
+workerGroupName: null
+envName: null
+alertGroupName: null
+estimatedEndTime: null
+taskGitInfoList:
+- taskName: "1"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"echo 1\",\"resourceList\":[],\"\
+    fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []
+- taskName: "echo_60k"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"echo 1\",\"resourceList\":[],\"\
+    fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: "env-光哥"
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "1"
+- taskName: "echo_60k_2sk"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"echo 1\",\"resourceList\":[],\"\
+    fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: "env-光哥"
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "2"
+- taskName: "echo_60k_2sk_6v8"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"echo 1\",\"resourceList\":[],\"\
+    fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: "env-光哥"
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "echo_60k_2sk"
+- taskName: "5"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"echo 1\",\"resourceList\":[],\"\
+    fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: "env-光哥"
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "echo_60k_2sk_6v8"
+- taskName: "6"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"echo 1\",\"resourceList\":[],\"\
+    fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: "env-光哥"
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "5"
+- taskName: "2"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"echo 1\",\"resourceList\":[],\"\
+    fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: "env-光哥"
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []
+- taskName: "3"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"echo 1\",\"resourceList\":[],\"\
+    fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: "env-光哥"
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []
+- taskName: "4"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"echo 1\",\"resourceList\":[],\"\
+    fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: "env-光哥"
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []

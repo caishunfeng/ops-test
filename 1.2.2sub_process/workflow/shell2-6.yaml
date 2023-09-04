@@ -1,4 +1,4 @@
-workflowName: "Trigger"
+workflowName: "shell2-6"
 desc: ""
 tenantName: null
 timeoutMin: null
@@ -15,13 +15,13 @@ envName: null
 alertGroupName: null
 estimatedEndTime: null
 taskGitInfoList:
-- taskName: "file"
-  taskType: "SURVEIL"
-  taskParams: "{\"scanType\":\"1\",\"localParams\":[],\"varPool\":null,\"interval\"\
-    :5,\"scanType\":1,\"filePath\":\"/data/whalestudio/tool/deploy.sh\",\"remoteConnection\"\
-    :null}"
+- taskName: "shell2"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"echo \\\"你好\\\"\",\"resourceList\"\
+    :[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
   resourceFiles: null
-  description: null
+  description: ""
   taskPriority: "MEDIUM"
   failRetryTimes: 0
   failRetryInterval: 1
@@ -36,55 +36,13 @@ taskGitInfoList:
   taskGroupPriority: null
   localParams: null
   preTasks: []
-- taskName: "file_no"
-  taskType: "SURVEIL"
-  taskParams: "{\"scanType\":\"1\",\"localParams\":[],\"varPool\":null,\"interval\"\
-    :5,\"scanType\":1,\"filePath\":\"/data/whalestudio/tool/dep123loy.sh\",\"remoteConnection\"\
-    :null}"
+- taskName: "shell3"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"echo \\\"你好\\\"\",\"resourceList\"\
+    :[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
   resourceFiles: null
-  description: null
-  taskPriority: "MEDIUM"
-  failRetryTimes: 0
-  failRetryInterval: 1
-  timeout: 5
-  timeoutNotifyStrategy: "FAILED"
-  delayTime: 0
-  locationX: null
-  locationY: null
-  workerGroup: "default"
-  env: null
-  taskGroup: null
-  taskGroupPriority: null
-  localParams: null
-  preTasks: []
-- taskName: "SQL_no"
-  taskType: "SURVEIL"
-  taskParams: "{\"scanType\":\"2\",\"localParams\":[],\"varPool\":null,\"interval\"\
-    :5,\"scanType\":2,\"type\":\"JDBC-Mysql\",\"sql\":\"select * from t_ds_user where\
-    \ id =100;\",\"datasource\":\"10647181688064\",\"database\":\"ws1\"}"
-  resourceFiles: null
-  description: null
-  taskPriority: "MEDIUM"
-  failRetryTimes: 0
-  failRetryInterval: 1
-  timeout: 5
-  timeoutNotifyStrategy: "FAILED"
-  delayTime: 0
-  locationX: null
-  locationY: null
-  workerGroup: "default"
-  env: null
-  taskGroup: null
-  taskGroupPriority: null
-  localParams: null
-  preTasks: []
-- taskName: "SQL"
-  taskType: "SURVEIL"
-  taskParams: "{\"scanType\":\"2\",\"localParams\":[],\"varPool\":null,\"interval\"\
-    :5,\"scanType\":2,\"type\":\"JDBC-Mysql\",\"sql\":\"select * from t_ds_user;\"\
-    ,\"datasource\":\"10647181688064\",\"database\":\"ws1\"}"
-  resourceFiles: null
-  description: null
+  description: ""
   taskPriority: "MEDIUM"
   failRetryTimes: 0
   failRetryInterval: 1
@@ -99,13 +57,55 @@ taskGitInfoList:
   taskGroupPriority: null
   localParams: null
   preTasks: []
-- taskName: "file_copy"
-  taskType: "SURVEIL"
-  taskParams: "{\"scanType\":\"1\",\"localParams\":[],\"varPool\":null,\"interval\"\
-    :5,\"scanType\":1,\"filePath\":\"/data/whalestudio/tool/deploy.sh\",\"remoteConnection\"\
-    :null}"
+- taskName: "shell6"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"echo \\\"你好\\\"\",\"resourceList\"\
+    :[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
   resourceFiles: null
-  description: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []
+- taskName: "shell4"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"echo \\\"你好\\\"\",\"resourceList\"\
+    :[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []
+- taskName: "shell5"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"echo \\\"你好\\\"\",\"resourceList\"\
+    :[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
   taskPriority: "MEDIUM"
   failRetryTimes: 0
   failRetryInterval: 1

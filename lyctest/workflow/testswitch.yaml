@@ -1,0 +1,132 @@
+workflowName: "testswitch"
+desc: ""
+tenantName: null
+timeoutMin: null
+executionStrategy: "PARALLEL"
+globalParams: "[]"
+labelNames: []
+cardName: null
+timingName: null
+failureStrategy: null
+warningType: null
+processInstancePriority: null
+workerGroupName: null
+envName: null
+alertGroupName: null
+estimatedEndTime: null
+taskGitInfoList:
+- taskName: "testmysql"
+  taskType: "SQL"
+  taskParams: "{\"localParams\":[{\"prop\":\"ID\",\"direct\":\"OUT\",\"type\":\"VARCHAR\"\
+    ,\"value\":\"\"}],\"resourceList\":[],\"type\":\"JDBC-Mysql\",\"datasource\":\"\
+    10758723221248\",\"sql\":\"select test_id as ID\\r\\nfrom lyctest\\r\\nwhere test_id=3\"\
+    ,\"fieldStr\":\"sql\",\"sqlType\":\"0\",\"preStatements\":[],\"postStatements\"\
+    :[],\"displayRows\":10,\"ideContentField\":{\"resourceId\":null,\"field\":\"sql\"\
+    }}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []
+- taskName: "switch"
+  taskType: "SWITCH"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"\",\"resourceList\":[],\"switchResult\"\
+    :{\"dependTaskList\":[{\"condition\":\"${ID}=='1'\",\"nextNode\":10767779031936},{\"\
+    condition\":\"${ID}=='2'\",\"nextNode\":10767780864256}],\"nextNode\":10767780247424},\"\
+    ideContentField\":{\"resourceId\":null,\"field\":null}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "testmysql"
+- taskName: "1"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"echo \\\"111111\\\"\",\"resourceList\"\
+    :[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "switch"
+- taskName: "3"
+  taskType: "SQL"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"type\":\"JDBC-Mysql\",\"\
+    datasource\":\"10758723221248\",\"database\":\"xuxutestdb\",\"sql\":\"select *\
+    \ from lyctest\",\"fieldStr\":\"sql\",\"sqlType\":\"0\",\"preStatements\":[],\"\
+    postStatements\":[],\"displayRows\":10,\"ideContentField\":{\"resourceId\":null,\"\
+    field\":\"sql\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "switch"
+- taskName: "2"
+  taskType: "PYTHON"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"print \\\"222222\\\"\",\"resourceList\"\
+    :[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "lyctest"
+  env: "python2.7"
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "switch"

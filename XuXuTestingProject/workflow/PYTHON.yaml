@@ -1,0 +1,107 @@
+workflowName: "PYTHON"
+desc: ""
+tenantName: null
+timeoutMin: null
+executionStrategy: "PARALLEL"
+globalParams: "[]"
+labelNames: []
+cardName: null
+timingName: null
+failureStrategy: null
+warningType: null
+processInstancePriority: null
+workerGroupName: null
+envName: null
+alertGroupName: null
+estimatedEndTime: null
+taskGitInfoList:
+- taskName: "shell"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"sh ./xuxu.sh\",\"resourceList\"\
+    :[{\"id\":17}],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\"\
+    :{\"resourceId\":null,\"field\":\"rawScript\"}}"
+  resourceFiles:
+  - "/xuxu.sh"
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []
+- taskName: "sql"
+  taskType: "SQL"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"type\":\"JDBC-Mysql\",\"\
+    datasource\":\"10647181688064\",\"database\":\"ws1\",\"sql\":\"SELECT * FROM t_ds_user;\"\
+    ,\"fieldStr\":\"sql\",\"sqlType\":\"0\",\"preStatements\":[],\"postStatements\"\
+    :[],\"sendEmail\":true,\"displayRows\":10,\"title\":\"ws1 TestCase\",\"groupId\"\
+    :3,\"ideContentField\":{\"resourceId\":null,\"field\":\"sql\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []
+- taskName: "Python"
+  taskType: "PYTHON"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"print(\\\"123\\\")\",\"resourceList\"\
+    :[{\"id\":7}],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\"\
+    :{\"resourceId\":7,\"field\":\"rawScript\"}}"
+  resourceFiles:
+  - "/test.py"
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: "python3"
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []
+- taskName: "python1"
+  taskType: "PYTHON"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"print(\\\"=======  start  =========\\\
+    \")\\n\\nprint(\\\"Hello, World!\\\")\\n\\nlist1 = [1,2,3,4,5,6,7,7]\\n\\nfor\
+    \ list in list1:\\n    print(list)\\n\\nprint(\\\"=======  end  =========\\\"\
+    )\",\"resourceList\":[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\"\
+    :{\"resourceId\":null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: "python3"
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []

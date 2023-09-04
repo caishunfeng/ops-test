@@ -1,0 +1,88 @@
+workflowName: "前置后置"
+desc: ""
+tenantName: null
+timeoutMin: null
+executionStrategy: "PARALLEL"
+globalParams: "[]"
+labelNames: []
+cardName: null
+timingName: null
+failureStrategy: null
+warningType: null
+processInstancePriority: null
+workerGroupName: null
+envName: null
+alertGroupName: null
+estimatedEndTime: null
+taskGitInfoList:
+- taskName: "前置后置"
+  taskType: "SQL"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"type\":\"JDBC-Mysql\",\"\
+    datasource\":\"10758723221248\",\"database\":\"xuxutestdb\",\"sql\":\"select *\
+    \ from lyctest where test_id=2;\",\"fieldStr\":\"sql\",\"sqlType\":\"0\",\"preStatements\"\
+    :[],\"postStatements\":[],\"displayRows\":10,\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"sql\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "前"
+- taskName: "前"
+  taskType: "SQL"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"type\":\"JDBC-Mysql\",\"\
+    datasource\":\"10758723221248\",\"database\":\"xuxutestdb\",\"sql\":\"select *\
+    \ from lyctest where test_id=1 \",\"fieldStr\":\"sql\",\"sqlType\":\"0\",\"preStatements\"\
+    :[],\"postStatements\":[],\"displayRows\":10,\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"sql\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []
+- taskName: "后"
+  taskType: "SQL"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"type\":\"JDBC-Mysql\",\"\
+    datasource\":\"10758723221248\",\"database\":\"xuxutestdb\",\"sql\":\"select *\
+    \ from lyctest where test_id=3\",\"fieldStr\":\"sql\",\"sqlType\":\"0\",\"preStatements\"\
+    :[],\"postStatements\":[],\"displayRows\":10,\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"sql\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: "env-光哥"
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "前置后置"

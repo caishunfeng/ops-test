@@ -1,0 +1,41 @@
+workflowName: "参数传递"
+desc: ""
+tenantName: null
+timeoutMin: null
+executionStrategy: "PARALLEL"
+globalParams: "[]"
+labelNames: []
+cardName: null
+timingName: null
+failureStrategy: null
+warningType: null
+processInstancePriority: null
+workerGroupName: null
+envName: null
+alertGroupName: null
+estimatedEndTime: null
+taskGitInfoList:
+- taskName: "参数传递"
+  taskType: "SQL"
+  taskParams: "{\"localParams\":[{\"prop\":\"T1\",\"direct\":\"IN\",\"type\":\"INTEGER\"\
+    ,\"value\":\"5\"}],\"resourceList\":[],\"type\":\"JDBC-Mysql\",\"datasource\"\
+    :\"10758723221248\",\"database\":\"xuxutestdb\",\"sql\":\"select test_id from\
+    \ lyctest where test_id=${T1};\",\"fieldStr\":\"sql\",\"sqlType\":\"0\",\"preStatements\"\
+    :[],\"postStatements\":[],\"displayRows\":10,\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"sql\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []

@@ -1,4 +1,4 @@
-workflowName: "工作流实例1+"
+workflowName: "dag相关操作123"
 desc: ""
 tenantName: null
 timeoutMin: null
@@ -15,9 +15,9 @@ envName: null
 alertGroupName: null
 estimatedEndTime: null
 taskGitInfoList:
-- taskName: "shell"
+- taskName: "echo"
   taskType: "SHELL"
-  taskParams: "{\"localParams\":[],\"rawScript\":\"echo 1\\nsleep 10\",\"resourceList\"\
+  taskParams: "{\"localParams\":[],\"rawScript\":\"1asdfafs沙发上都发顺丰\",\"resourceList\"\
     :[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
     :null,\"field\":\"rawScript\"}}"
   resourceFiles: null
@@ -36,9 +36,30 @@ taskGitInfoList:
   taskGroupPriority: null
   localParams: null
   preTasks: []
-- taskName: "shell_2nh"
+- taskName: "echo_1tm"
   taskType: "SHELL"
-  taskParams: "{\"localParams\":[],\"rawScript\":\"echo 1\\nsleep 10\",\"resourceList\"\
+  taskParams: "{\"localParams\":[],\"rawScript\":\"1asdfafs\",\"resourceList\":[],\"\
+    fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: "env-光哥"
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []
+- taskName: "echo_dv"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"1asdfafs沙发上都发顺丰\",\"resourceList\"\
     :[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
     :null,\"field\":\"rawScript\"}}"
   resourceFiles: null
@@ -56,5 +77,4 @@ taskGitInfoList:
   taskGroup: null
   taskGroupPriority: null
   localParams: null
-  preTasks:
-  - "shell"
+  preTasks: []

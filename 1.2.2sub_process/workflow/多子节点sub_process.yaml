@@ -1,4 +1,4 @@
-workflowName: "工作流实例1+"
+workflowName: "多子节点sub_process"
 desc: ""
 tenantName: null
 timeoutMin: null
@@ -15,10 +15,10 @@ envName: null
 alertGroupName: null
 estimatedEndTime: null
 taskGitInfoList:
-- taskName: "shell"
+- taskName: "shell1"
   taskType: "SHELL"
-  taskParams: "{\"localParams\":[],\"rawScript\":\"echo 1\\nsleep 10\",\"resourceList\"\
-    :[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+  taskParams: "{\"localParams\":[],\"rawScript\":\"echo 123\",\"resourceList\":[],\"\
+    fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
     :null,\"field\":\"rawScript\"}}"
   resourceFiles: null
   description: ""
@@ -31,16 +31,15 @@ taskGitInfoList:
   locationX: null
   locationY: null
   workerGroup: "default"
-  env: "env-光哥"
+  env: null
   taskGroup: null
   taskGroupPriority: null
   localParams: null
   preTasks: []
-- taskName: "shell_2nh"
-  taskType: "SHELL"
-  taskParams: "{\"localParams\":[],\"rawScript\":\"echo 1\\nsleep 10\",\"resourceList\"\
-    :[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
-    :null,\"field\":\"rawScript\"}}"
+- taskName: "多子节点"
+  taskType: "SUB_PROCESS"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"processDefinitionCode\":10778325151104,\"\
+    ideContentField\":{\"resourceId\":null,\"field\":null}}"
   resourceFiles: null
   description: ""
   taskPriority: "MEDIUM"
@@ -52,9 +51,9 @@ taskGitInfoList:
   locationX: null
   locationY: null
   workerGroup: "default"
-  env: "env-光哥"
+  env: null
   taskGroup: null
   taskGroupPriority: null
   localParams: null
   preTasks:
-  - "shell"
+  - "shell1"

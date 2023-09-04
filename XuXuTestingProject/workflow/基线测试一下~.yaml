@@ -1,0 +1,82 @@
+workflowName: "基线测试一下~"
+desc: ""
+tenantName: null
+timeoutMin: null
+executionStrategy: "PARALLEL"
+globalParams: "[]"
+labelNames: []
+cardName: null
+timingName: "定时啊定时"
+failureStrategy: "CONTINUE"
+warningType: "NONE"
+processInstancePriority: "MEDIUM"
+workerGroupName: "default"
+envName: null
+alertGroupName: null
+estimatedEndTime: null
+taskGitInfoList:
+- taskName: "shell"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"date \\n\\nsleep 100\\n\\ndate\"\
+    ,\"resourceList\":[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\"\
+    :{\"resourceId\":null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []
+- taskName: "shell_3wp"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"date \\n\\nsleep 100\\n\\nsleep\
+    \ 20\\n\\ndate\",\"resourceList\":[],\"fieldStr\":\"rawScript\",\"dataSourceList\"\
+    :[],\"ideContentField\":{\"resourceId\":null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "shell"
+- taskName: "shell_3wp_388"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"date \\n\\nsleep 100\\n\\ndate\"\
+    ,\"resourceList\":[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\"\
+    :{\"resourceId\":null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "shell_3wp"

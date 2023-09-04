@@ -1,0 +1,40 @@
+workflowName: "server插入"
+desc: ""
+tenantName: null
+timeoutMin: null
+executionStrategy: "PARALLEL"
+globalParams: "[]"
+labelNames: []
+cardName: null
+timingName: null
+failureStrategy: null
+warningType: null
+processInstancePriority: null
+workerGroupName: null
+envName: null
+alertGroupName: null
+estimatedEndTime: null
+taskGitInfoList:
+- taskName: "select"
+  taskType: "SQL"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"type\":\"JDBC-SQLServer\"\
+    ,\"datasource\":\"10724528323456\",\"database\":\"xuxutestdb\",\"sql\":\"insert\
+    \ into lyctest(id,name)values(4,'hgq'),(5,'zwh'),(6,'szp')\",\"fieldStr\":\"sql\"\
+    ,\"sqlType\":\"0\",\"preStatements\":[],\"postStatements\":[],\"displayRows\"\
+    :10,\"ideContentField\":{\"resourceId\":null,\"field\":\"sql\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: "env-光哥"
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []

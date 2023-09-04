@@ -1,0 +1,39 @@
+workflowName: "fasdf"
+desc: ""
+tenantName: "ws1"
+timeoutMin: null
+executionStrategy: "PARALLEL"
+globalParams: "[]"
+labelNames: []
+cardName: null
+timingName: null
+failureStrategy: null
+warningType: null
+processInstancePriority: null
+workerGroupName: null
+envName: null
+alertGroupName: null
+estimatedEndTime: null
+taskGitInfoList:
+- taskName: "wadsf"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"cat 资源权限.sh\",\"resourceList\"\
+    :[{\"id\":40}],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\"\
+    :{\"resourceId\":null,\"field\":\"rawScript\"}}"
+  resourceFiles:
+  - "/资源权限.sh"
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: "env-光哥"
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []

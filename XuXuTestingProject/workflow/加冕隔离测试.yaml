@@ -1,0 +1,280 @@
+workflowName: "加冕隔离测试"
+desc: ""
+tenantName: null
+timeoutMin: null
+executionStrategy: "PARALLEL"
+globalParams: "[]"
+labelNames: []
+cardName: null
+timingName: null
+failureStrategy: null
+warningType: null
+processInstancePriority: null
+workerGroupName: null
+envName: null
+alertGroupName: null
+estimatedEndTime: null
+taskGitInfoList:
+- taskName: "shell1"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"varPool\":null,\"rawScript\":\"date\\n\\nsleep\
+    \ 10\\n\\ndate\",\"remoteConnection\":null,\"resourceList\":[],\"dataSourceList\"\
+    :null}"
+  resourceFiles: null
+  description: null
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []
+- taskName: "shell6"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"varPool\":null,\"rawScript\":\"date\\n\\nsleep\
+    \ 10\\n\\ndate\",\"remoteConnection\":null,\"resourceList\":[],\"dataSourceList\"\
+    :null}"
+  resourceFiles: null
+  description: null
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "shell3"
+- taskName: "shell7"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"varPool\":null,\"rawScript\":\"date\\n\\nsleep\
+    \ 10\\n\\ndate\",\"remoteConnection\":null,\"resourceList\":[],\"dataSourceList\"\
+    :null}"
+  resourceFiles: null
+  description: null
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "shell3"
+- taskName: "shell4"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"varPool\":null,\"rawScript\":\"date\\n\\nsleep\
+    \ 10\\n\\ndate\",\"remoteConnection\":null,\"resourceList\":[],\"dataSourceList\"\
+    :null}"
+  resourceFiles: null
+  description: null
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "shell2"
+- taskName: "shell5"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"varPool\":null,\"rawScript\":\"date\\n\\nsleep\
+    \ 10\\n\\ndate\",\"remoteConnection\":null,\"resourceList\":[],\"dataSourceList\"\
+    :null}"
+  resourceFiles: null
+  description: null
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "shell2"
+- taskName: "shell2"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"varPool\":null,\"rawScript\":\"date\\n\\nsleep\
+    \ 10\\n\\ndate\",\"remoteConnection\":null,\"resourceList\":[],\"dataSourceList\"\
+    :null}"
+  resourceFiles: null
+  description: null
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "shell1"
+- taskName: "shell3"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"varPool\":null,\"rawScript\":\"date\\n\\nsleep\
+    \ 10\\n\\ndate\",\"remoteConnection\":null,\"resourceList\":[],\"dataSourceList\"\
+    :null}"
+  resourceFiles: null
+  description: null
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "shell1"
+- taskName: "shell11"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"varPool\":null,\"rawScript\":\"date\\n\\nsleep\
+    \ 10\\n\\ndate\",\"remoteConnection\":null,\"resourceList\":[],\"dataSourceList\"\
+    :null}"
+  resourceFiles: null
+  description: null
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "shell10"
+- taskName: "shell12"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"varPool\":null,\"rawScript\":\"date\\n\\nsleep\
+    \ 10\\n\\ndate\",\"remoteConnection\":null,\"resourceList\":[],\"dataSourceList\"\
+    :null}"
+  resourceFiles: null
+  description: null
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "shell7"
+- taskName: "shell10"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"varPool\":null,\"rawScript\":\"date\\n\\nsleep\
+    \ 10\\n\\ndate\",\"remoteConnection\":null,\"resourceList\":[],\"dataSourceList\"\
+    :null}"
+  resourceFiles: null
+  description: null
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "shell6"
+- taskName: "shell8"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"varPool\":null,\"rawScript\":\"date\\n\\nsleep\
+    \ 10\\n\\ndate\",\"remoteConnection\":null,\"resourceList\":[],\"dataSourceList\"\
+    :null}"
+  resourceFiles: null
+  description: null
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "shell4"
+- taskName: "shell9"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"varPool\":null,\"rawScript\":\"date\\n\\nsleep\
+    \ 10\\n\\ndate\",\"remoteConnection\":null,\"resourceList\":[],\"dataSourceList\"\
+    :null}"
+  resourceFiles: null
+  description: null
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "shell4"

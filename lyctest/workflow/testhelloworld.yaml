@@ -1,4 +1,4 @@
-workflowName: "工作流实例1+"
+workflowName: "testhelloworld"
 desc: ""
 tenantName: null
 timeoutMin: null
@@ -15,11 +15,10 @@ envName: null
 alertGroupName: null
 estimatedEndTime: null
 taskGitInfoList:
-- taskName: "shell"
-  taskType: "SHELL"
-  taskParams: "{\"localParams\":[],\"rawScript\":\"echo 1\\nsleep 10\",\"resourceList\"\
-    :[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
-    :null,\"field\":\"rawScript\"}}"
+- taskName: "testproc"
+  taskType: "SUB_PROCESS"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"processDefinitionCode\":10765739057280,\"\
+    ideContentField\":{\"resourceId\":null,\"field\":null}}"
   resourceFiles: null
   description: ""
   taskPriority: "MEDIUM"
@@ -31,14 +30,14 @@ taskGitInfoList:
   locationX: null
   locationY: null
   workerGroup: "default"
-  env: "env-光哥"
+  env: null
   taskGroup: null
   taskGroupPriority: null
   localParams: null
   preTasks: []
-- taskName: "shell_2nh"
-  taskType: "SHELL"
-  taskParams: "{\"localParams\":[],\"rawScript\":\"echo 1\\nsleep 10\",\"resourceList\"\
+- taskName: "world"
+  taskType: "PYTHON"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"print('world')\",\"resourceList\"\
     :[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
     :null,\"field\":\"rawScript\"}}"
   resourceFiles: null
@@ -57,4 +56,4 @@ taskGitInfoList:
   taskGroupPriority: null
   localParams: null
   preTasks:
-  - "shell"
+  - "testproc"
