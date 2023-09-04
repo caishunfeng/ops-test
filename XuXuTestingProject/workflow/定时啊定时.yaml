@@ -20,7 +20,7 @@ estimatedEndTime: null
 taskGitInfoList:
 - taskName: "shell"
   taskType: "SHELL"
-  taskParams: "{\"localParams\":[],\"rawScript\":\"echo\\\"date2\\\"\\ndate\",\"resourceList\"\
+  taskParams: "{\"localParams\":[],\"rawScript\":\"echo\\\"date666\\\"\\ndate\",\"resourceList\"\
     :[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
     :null,\"field\":\"rawScript\"}}"
   resourceFiles: null
