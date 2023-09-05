@@ -1,0 +1,41 @@
+workflowName: "jar执行jar"
+desc: ""
+tenantName: null
+timeoutMin: null
+executionStrategy: "PARALLEL"
+globalParams: "[]"
+labelNames: []
+cardName: null
+timingName: null
+failureStrategy: null
+warningType: null
+processInstancePriority: null
+workerGroupName: null
+envName: null
+alertGroupName: null
+estimatedEndTime: null
+taskGitInfoList:
+- taskName: "jar执行jar"
+  taskType: "JAR"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"programType\":\"CLASS\",\"\
+    options\":\"-server -Xms1g -Xmx1g -Xmn512m -XX:+PrintGCDetails -Xloggc:gc.log\
+    \ -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=dump.hprof\",\"cpResIds\":[41],\"\
+    mainClass\":\"org.whaleops.license.GetLicenseMachineID\",\"ideContentField\":{\"\
+    resourceId\":null,\"field\":null}}"
+  resourceFiles:
+  - "/whale-license-client.jar"
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: "env-光哥"
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []

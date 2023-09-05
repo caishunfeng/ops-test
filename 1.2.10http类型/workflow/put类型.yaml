@@ -1,0 +1,39 @@
+workflowName: "put类型"
+desc: ""
+tenantName: null
+timeoutMin: null
+executionStrategy: "PARALLEL"
+globalParams: "[]"
+labelNames: []
+cardName: null
+timingName: null
+failureStrategy: null
+warningType: null
+processInstancePriority: null
+workerGroupName: null
+envName: null
+alertGroupName: null
+estimatedEndTime: null
+taskGitInfoList:
+- taskName: "put类型"
+  taskType: "HTTP"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"httpMethod\":\"PUT\",\"httpCheckCondition\"\
+    :\"STATUS_CODE_DEFAULT\",\"httpParams\":[],\"url\":\"https://httpbin.org/put\"\
+    ,\"condition\":\"success\",\"connectTimeout\":60000,\"socketTimeout\":60000,\"\
+    ideContentField\":{\"resourceId\":null,\"field\":null}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: "env-光哥"
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []

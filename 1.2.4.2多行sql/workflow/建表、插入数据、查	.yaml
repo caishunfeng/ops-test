@@ -1,0 +1,42 @@
+workflowName: "建表、插入数据、查\t"
+desc: ""
+tenantName: null
+timeoutMin: null
+executionStrategy: "PARALLEL"
+globalParams: "[]"
+labelNames: []
+cardName: null
+timingName: null
+failureStrategy: null
+warningType: null
+processInstancePriority: null
+workerGroupName: null
+envName: null
+alertGroupName: null
+estimatedEndTime: null
+taskGitInfoList:
+- taskName: "create，insert，select"
+  taskType: "SQL"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"type\":\"JDBC-Mysql\",\"\
+    datasource\":\"10758723221248\",\"database\":\"xuxutestdb\",\"sql\":\"create table\
+    \ mingdongtest1(id int primary key,name varchar(20));\\r\\ninsert into mingdongtest1\
+    \ (id,name) value(1,'gage');\\r\\nselect * from mingdongtest1 where id = 1;\"\
+    ,\"fieldStr\":\"sql\",\"sqlType\":\"0\",\"preStatements\":[],\"postStatements\"\
+    :[],\"displayRows\":10,\"ideContentField\":{\"resourceId\":null,\"field\":\"sql\"\
+    }}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []

@@ -1,0 +1,41 @@
+workflowName: "创建1个java类型\t"
+desc: ""
+tenantName: null
+timeoutMin: null
+executionStrategy: "PARALLEL"
+globalParams: "[]"
+labelNames: []
+cardName: null
+timingName: null
+failureStrategy: null
+warningType: null
+processInstancePriority: null
+workerGroupName: null
+envName: null
+alertGroupName: null
+estimatedEndTime: null
+taskGitInfoList:
+- taskName: "创建1个java类型\t"
+  taskType: "FLINK"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"fieldStr\":\"rawScript\"\
+    ,\"programType\":\"JAVA\",\"mainClass\":\"WordCount\",\"mainJar\":{\"id\":35},\"\
+    deployMode\":\"local\",\"flinkVersion\":\"<1.10\",\"jobManagerMemory\":\"1G\"\
+    ,\"taskManagerMemory\":\"2G\",\"slot\":1,\"taskManager\":2,\"parallelism\":1,\"\
+    ideContentField\":{\"resourceId\":null,\"field\":\"rawScript\"}}"
+  resourceFiles:
+  - "/WordCount.jar"
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: "env-光哥"
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []

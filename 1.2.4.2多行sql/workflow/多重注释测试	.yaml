@@ -1,0 +1,45 @@
+workflowName: "多重注释测试\t"
+desc: ""
+tenantName: null
+timeoutMin: null
+executionStrategy: "PARALLEL"
+globalParams: "[]"
+labelNames: []
+cardName: null
+timingName: null
+failureStrategy: null
+warningType: null
+processInstancePriority: null
+workerGroupName: null
+envName: null
+alertGroupName: null
+estimatedEndTime: null
+taskGitInfoList:
+- taskName: "多重注释测试\t"
+  taskType: "SQL"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"type\":\"JDBC-Mysql\",\"\
+    datasource\":\"10758723221248\",\"database\":\"xuxutestdb\",\"sql\":\"/*\\r\\\
+    n我是注释\\r\\n我是注释\\r\\n我是注释\\r\\n我是注释\\r\\n我是注释\\r\\n我是注释\\r\\n我是注释\\r\\n我是注释\\\
+    r\\n我是注释\\r\\n*/\\r\\nselect UNIX_TIMESTAMP(now()); -- 现在的时间戳是这个\\r\\n-- 现在的时间\
+    戳是这个\\r\\nselect UNIX_TIMESTAMP(now());    -- 现在的时间戳是这个\\r\\n \\r\\n-- 现在的时间戳是\
+    这个\\r\\n \\r\\nselect UNIX_TIMESTAMP(now());    # 现在的时间戳是这个\\r\\n# 现在的时间戳是这个\\\
+    r\\nselect UNIX_TIMESTAMP(now());#现在的时间戳是这个\\r\\nselect UNIX_TIMESTAMP(now());#\
+    \ 现在的时间戳是这个\\r\\nselect UNIX_TIMESTAMP(now()); #现在的时间戳是这个\",\"fieldStr\":\"sql\"\
+    ,\"sqlType\":\"0\",\"preStatements\":[],\"postStatements\":[],\"displayRows\"\
+    :10,\"ideContentField\":{\"resourceId\":null,\"field\":\"sql\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []

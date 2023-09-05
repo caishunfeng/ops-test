@@ -1,0 +1,40 @@
+workflowName: "python 条件调用成功\t"
+desc: ""
+tenantName: null
+timeoutMin: null
+executionStrategy: "PARALLEL"
+globalParams: "[]"
+labelNames: []
+cardName: null
+timingName: null
+failureStrategy: null
+warningType: null
+processInstancePriority: null
+workerGroupName: null
+envName: null
+alertGroupName: null
+estimatedEndTime: null
+taskGitInfoList:
+- taskName: "python 条件调用成功"
+  taskType: "PYTHON"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"flag = False\\r\\nname = 'luren'\\\
+    r\\nif name == 'python': # 判断变量是否为 python flag = True # 条件成立时设置标志为真\\r\\n    print\
+    \ ('welcome boss' )# 并输出欢迎信息\\r\\nelse: \\r\\n    print (name) # 条件不成立时输出变量名称\"\
+    ,\"resourceList\":[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\"\
+    :{\"resourceId\":null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: "python3"
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []

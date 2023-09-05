@@ -6,11 +6,11 @@ executionStrategy: "PARALLEL"
 globalParams: "[]"
 labelNames: []
 cardName: null
-timingName: null
-failureStrategy: null
-warningType: null
-processInstancePriority: null
-workerGroupName: null
+timingName: "test-zjj"
+failureStrategy: "CONTINUE"
+warningType: "NONE"
+processInstancePriority: "MEDIUM"
+workerGroupName: "default"
 envName: null
 alertGroupName: null
 estimatedEndTime: null
@@ -39,8 +39,8 @@ taskGitInfoList:
 - taskName: "http-get"
   taskType: "HTTP"
   taskParams: "{\"localParams\":[],\"resourceList\":[],\"httpMethod\":\"GET\",\"httpCheckCondition\"\
-    :\"STATUS_CODE_DEFAULT\",\"httpParams\":[],\"url\":\"http://www.baidu.com\",\"\
-    condition\":\"\",\"connectTimeout\":60000,\"socketTimeout\":60000,\"ideContentField\"\
+    :\"STATUS_CODE_DEFAULT\",\"httpParams\":[],\"url\":\"https://httpbin.org/get\"\
+    ,\"condition\":\"\",\"connectTimeout\":60000,\"socketTimeout\":60000,\"ideContentField\"\
     :{\"resourceId\":null,\"field\":null}}"
   resourceFiles: null
   description: ""
@@ -54,6 +54,170 @@ taskGitInfoList:
   locationY: null
   workerGroup: "default"
   env: "env-光哥"
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "echo"
+- taskName: "http-post"
+  taskType: "HTTP"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"httpMethod\":\"POST\",\"\
+    httpCheckCondition\":\"STATUS_CODE_DEFAULT\",\"httpParams\":[],\"url\":\"https://httpbin.org/post\"\
+    ,\"condition\":\"\",\"connectTimeout\":60000,\"socketTimeout\":60000,\"ideContentField\"\
+    :{\"resourceId\":null,\"field\":null}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: "env-光哥"
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "echo"
+- taskName: "http-head"
+  taskType: "HTTP"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"httpMethod\":\"HEAD\",\"\
+    httpCheckCondition\":\"STATUS_CODE_DEFAULT\",\"httpParams\":[],\"url\":\"https://httpbin.org\"\
+    ,\"condition\":\"\",\"connectTimeout\":60000,\"socketTimeout\":60000,\"ideContentField\"\
+    :{\"resourceId\":null,\"field\":null}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: "env-光哥"
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "echo"
+- taskName: "http-get_q2_5ti_2im"
+  taskType: "HTTP"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"httpMethod\":\"GET\",\"httpCheckCondition\"\
+    :\"STATUS_CODE_DEFAULT\",\"httpParams\":[],\"url\":\"https://httpbin.org/get\"\
+    ,\"condition\":\"\",\"connectTimeout\":60000,\"socketTimeout\":60000,\"ideContentField\"\
+    :{\"resourceId\":null,\"field\":null}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: "env-光哥"
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []
+- taskName: "http-delete"
+  taskType: "HTTP"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"httpMethod\":\"DELETE\",\"\
+    httpCheckCondition\":\"STATUS_CODE_DEFAULT\",\"httpParams\":[],\"url\":\"https://httpbin.org/delete\"\
+    ,\"condition\":\"\",\"connectTimeout\":60000,\"socketTimeout\":60000,\"ideContentField\"\
+    :{\"resourceId\":null,\"field\":null}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: "env-光哥"
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "echo"
+- taskName: "http-put"
+  taskType: "HTTP"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"httpMethod\":\"PUT\",\"httpCheckCondition\"\
+    :\"STATUS_CODE_DEFAULT\",\"httpParams\":[],\"url\":\"https://httpbin.org/put\"\
+    ,\"condition\":\"\",\"connectTimeout\":60000,\"socketTimeout\":60000,\"ideContentField\"\
+    :{\"resourceId\":null,\"field\":null}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: "env-光哥"
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "echo"
+- taskName: "montor-success"
+  taskType: "HTTP"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"httpMethod\":\"GET\",\"httpCheckCondition\"\
+    :\"STATUS_CODE_DEFAULT\",\"httpParams\":[],\"url\":\"http://8.130.104.195:12345/dolphinscheduler/monitor/masters\"\
+    ,\"condition\":\"response.data != null && response.data[0].host == '172.20.123.142'\
+    \ && response.data[0].resInfo.masterServerStatus == 'RUNNING' && response.msg\
+    \ == \\\"成功\\\"\",\"connectTimeout\":60000,\"socketTimeout\":60000,\"ideContentField\"\
+    :{\"resourceId\":null,\"field\":null}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 30
+  timeoutNotifyStrategy: "WARN"
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: "1.5 数据质量"
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "echo"
+- taskName: "montor-fail"
+  taskType: "HTTP"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"httpMethod\":\"GET\",\"httpCheckCondition\"\
+    :\"STATUS_CODE_DEFAULT\",\"httpParams\":[],\"url\":\"http://8.130.104.195:12345/dolphinscheduler/monitor/masters\"\
+    ,\"condition\":\"response.data != null && response.data[0].host == '172.20.123.142'\
+    \ && response.data[0].resInfo.masterServerStatus == 'RUNNING' && response.msg\
+    \ == \\\"成功\\\"\",\"connectTimeout\":60000,\"socketTimeout\":60000,\"ideContentField\"\
+    :{\"resourceId\":null,\"field\":null}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 30
+  timeoutNotifyStrategy: "WARN"
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: "1.5 数据质量"
   taskGroup: null
   taskGroupPriority: null
   localParams: null

@@ -1,0 +1,401 @@
+workflowName: "1.2.2 工作流-复制"
+desc: ""
+tenantName: null
+timeoutMin: null
+executionStrategy: "PARALLEL"
+globalParams: "[]"
+labelNames:
+- "001"
+cardName: "123123"
+timingName: "test-zjj"
+failureStrategy: "CONTINUE"
+warningType: "NONE"
+processInstancePriority: null
+workerGroupName: "default"
+envName: "test-zjj"
+alertGroupName: "zjj"
+estimatedEndTime: null
+taskGitInfoList:
+- taskName: "echo"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"echo 1\",\"resourceList\":[{\"\
+    id\":43}],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\"\
+    :{\"resourceId\":null,\"field\":\"rawScript\"}}"
+  resourceFiles:
+  - "/zjj-test.sh"
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []
+- taskName: "proc"
+  taskType: "PROCEDURE"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"type\":\"JDBC-Mysql\",\"\
+    datasource\":\"10647181688064\",\"database\":\"ws1\",\"method\":\"call test\"\
+    ,\"fieldStr\":\"method\",\"ideContentField\":{\"resourceId\":null,\"field\":\"\
+    method\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: "env-光哥"
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "echo"
+- taskName: "sp"
+  taskType: "SUB_PROCESS"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"processDefinitionCode\":10768735043712,\"\
+    ideContentField\":{\"resourceId\":null,\"field\":null}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: "env-光哥"
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "echo"
+- taskName: "py"
+  taskType: "PYTHON"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"print(1)\",\"resourceList\":[],\"\
+    fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: "env-光哥"
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "echo"
+- taskName: "http"
+  taskType: "HTTP"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"httpMethod\":\"GET\",\"httpCheckCondition\"\
+    :\"STATUS_CODE_DEFAULT\",\"httpParams\":[],\"url\":\"http://www.baidu.com\",\"\
+    condition\":\"\",\"connectTimeout\":60000,\"socketTimeout\":60000,\"ideContentField\"\
+    :{\"resourceId\":null,\"field\":null}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: "env-光哥"
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "echo"
+- taskName: "trigger"
+  taskType: "SURVEIL"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"interval\":60,\"scanType\"\
+    :1,\"filePath\":\"/tmp/aaaaa.text\",\"ideContentField\":{\"resourceId\":null,\"\
+    field\":null}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: "env-光哥"
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "echo"
+  - "cond"
+  - "switch"
+- taskName: "sql"
+  taskType: "SQL"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"type\":\"JDBC-Mysql\",\"\
+    datasource\":\"10647181688064\",\"sql\":\"select 1\",\"fieldStr\":\"sql\",\"sqlType\"\
+    :\"0\",\"preStatements\":[],\"postStatements\":[],\"displayRows\":10,\"ideContentField\"\
+    :{\"resourceId\":null,\"field\":\"sql\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "echo"
+  - "cond"
+  - "switch"
+- taskName: "cond"
+  taskType: "CONDITIONS"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"dependence\":{\"relation\"\
+    :\"AND\",\"dependTaskList\":[{\"relation\":\"AND\",\"dependItemList\":[{\"depTaskCode\"\
+    :10768862992512,\"status\":\"SUCCESS\"}]}]},\"conditionResult\":{\"successNode\"\
+    :[10768891860864],\"failedNode\":[10768885728128]},\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":null}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: null
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "echo"
+- taskName: "switch"
+  taskType: "SWITCH"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"\",\"resourceList\":[],\"switchResult\"\
+    :{\"dependTaskList\":[{\"condition\":\"a == 1\",\"nextNode\":10768891860864}],\"\
+    nextNode\":10768885728128},\"ideContentField\":{\"resourceId\":null,\"field\"\
+    :null}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: null
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "echo"
+- taskName: "flink"
+  taskType: "FLINK"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"fieldStr\":\"rawScript\"\
+    ,\"programType\":\"SCALA\",\"mainClass\":\"asfasfa\",\"mainJar\":{\"id\":12},\"\
+    deployMode\":\"local\",\"flinkVersion\":\"<1.10\",\"jobManagerMemory\":\"1G\"\
+    ,\"taskManagerMemory\":\"2G\",\"slot\":1,\"taskManager\":2,\"parallelism\":1,\"\
+    ideContentField\":{\"resourceId\":null,\"field\":\"rawScript\"}}"
+  resourceFiles:
+  - "/spark-examples_2.12-3.0.0.jar"
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "echo"
+- taskName: "spark"
+  taskType: "SPARK"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"fieldStr\":\"rawScript\"\
+    ,\"programType\":\"SCALA\",\"mainClass\":\"safest\",\"mainJar\":{\"id\":12},\"\
+    deployMode\":\"local\",\"driverCores\":1,\"driverMemory\":\"512M\",\"numExecutors\"\
+    :2,\"executorMemory\":\"2G\",\"executorCores\":2,\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
+  resourceFiles:
+  - "/spark-examples_2.12-3.0.0.jar"
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: "env-光哥"
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "echo"
+- taskName: "mr"
+  taskType: "MR"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"programType\":\"SCALA\",\"\
+    mainClass\":\"asfdasf\",\"mainJar\":{\"id\":12},\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":null}}"
+  resourceFiles:
+  - "/spark-examples_2.12-3.0.0.jar"
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "echo"
+- taskName: "emr"
+  taskType: "EMR"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"type\":\"EMR\",\"programType\"\
+    :\"ADD_JOB_FLOW_STEPS\",\"stepsDefineJson\":\"{\\\"test\\\": 1}\",\"fieldStr\"\
+    :\"stepsDefineJson\",\"ideContentField\":{\"resourceId\":null,\"field\":\"stepsDefineJson\"\
+    }}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: "env-光哥"
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "echo"
+- taskName: "nl"
+  taskType: "NEXT_LOOP"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"fieldStr\":\"rawScript\"\
+    ,\"customConfig\":0,\"programType\":\"SHELL\",\"cardCode\":10800441801600,\"ideContentField\"\
+    :{\"resourceId\":null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 0
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: "env-光哥"
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks:
+  - "echo"
+- taskName: "dep"
+  taskType: "DEPENDENT"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"dependence\":{\"relation\"\
+    :\"AND\",\"dependTaskList\":[{\"dependItemList\":[{\"projectCode\":10757635829760,\"\
+    definitionCode\":10811977751168,\"depTaskCodes\":[10811977751169],\"timeType\"\
+    :\"NATURAL\",\"cycle\":\"day\",\"dateValue\":\"today\",\"state\":null,\"projectCodeOptions\"\
+    :[{\"value\":10734080586368,\"label\":\"1.2.2 工作流-单个操作\"},{\"value\":10734080669952,\"\
+    label\":\"1.1.4 SQL\"},{\"value\":10734080675712,\"label\":\"1.5 数据质量\"},{\"value\"\
+    :10734080694400,\"label\":\"1.4.1.1 任务相关\"},{\"value\":10734080697728,\"label\"\
+    :\"ldk\"},{\"value\":10734080708096,\"label\":\"1.2.3 工作流-批量操作\"},{\"value\":10734080714752,\"\
+    label\":\"1.2.7 工作流运行策略\"},{\"value\":10734080720640,\"label\":\"1.1.6 dependent\"\
+    },{\"value\":10734080733440,\"label\":\"1.1.7 condition\"},{\"value\":10734080739200,\"\
+    label\":\"test\"},{\"value\":10734080744960,\"label\":\"666666\"},{\"value\":10734080750464,\"\
+    label\":\"1111111\"},{\"value\":10734080756224,\"label\":\"1.1.10 trigger\"},{\"\
+    value\":10734080765568,\"label\":\"1.2.1 工作流-定时\"},{\"value\":10734080798720,\"\
+    label\":\"t0-case\"},{\"value\":10734080802560,\"label\":\"见证奇迹的项目\"},{\"value\"\
+    :10734080808192,\"label\":\"1.2.8 任务运行策略\"},{\"value\":10734080848000,\"label\"\
+    :\"1111111111\"},{\"value\":10734080857344,\"label\":\"1.1.3 http\"},{\"value\"\
+    :10734080861312,\"label\":\"1.7.1 基线告警\"},{\"value\":10734080866432,\"label\"\
+    :\"1.1.8 switch\"},{\"value\":10734080871424,\"label\":\"光哥测试专属\"},{\"value\"\
+    :10734080952192,\"label\":\"XuXuTestingProject&shunfeng&yarui\"},{\"value\":10734080971776,\"\
+    label\":\"22222222\"},{\"value\":10734141509376,\"label\":\"XuXuTesting\"},{\"\
+    value\":10735199388416,\"label\":\"XuXuTestingProject\"},{\"value\":10744052667904,\"\
+    label\":\"wyr测试一下push\"},{\"value\":10745600360704,\"label\":\"光哥测试专属2\"},{\"\
+    value\":10756203025920,\"label\":\"光哥测试专属3\"},{\"value\":10757635829760,\"label\"\
+    :\"zjj_test\"},{\"value\":10758650936960,\"label\":\"lyctest\"},{\"value\":10768057661440,\"\
+    label\":\"wendada\"},{\"value\":10768596251264,\"label\":\"@\"},{\"value\":10768597078912,\"\
+    label\":\"!\"},{\"value\":10768598899456,\"label\":\">\"},{\"value\":10776596556288,\"\
+    label\":\"1.2test\"},{\"value\":10778111559936,\"label\":\"1.2.2sub_process\"\
+    },{\"value\":10778518543488,\"label\":\"1.2.3procedure\"},{\"value\":10778729769984,\"\
+    label\":\"1.2.4.1SQL\"},{\"value\":10798986887936,\"label\":\"wyr测试commit\"},{\"\
+    value\":10799062468992,\"label\":\"光哥测试专业9月\"},{\"value\":10799199948672,\"label\"\
+    :\"1.2.4.2多行sql\"},{\"value\":10800223481088,\"label\":\"1.2.5spark类型\"},{\"value\"\
+    :10800346758656,\"label\":\"baoliang\"},{\"value\":10800454834688,\"label\":\"\
+    这个不会被push\"},{\"value\":10800795237120,\"label\":\"1.2.6flink类型\"},{\"value\"\
+    :10801221398400,\"label\":\"1.2.8python\"},{\"value\":10801536382848,\"label\"\
+    :\"1.2.9dependent类型\"},{\"value\":10802525883776,\"label\":\"1.2.10http类型\"},{\"\
+    value\":10810236341248,\"label\":\"1.2.13condition类型\"},{\"value\":10810381967104,\"\
+    label\":\"1.2.14switch类型\"},{\"value\":10811281377536,\"label\":\"1.2.16trigger\"\
+    },{\"value\":10811876919296,\"label\":\"zjj-export\"},{\"value\":10811877140736,\"\
+    label\":\"工作流定义---操作\"}]}],\"relation\":\"AND\"}]},\"otherParams\":{\"dependStrategy\"\
+    :\"failure-continue\"},\"ideContentField\":{\"resourceId\":null,\"field\":null}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: null
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []

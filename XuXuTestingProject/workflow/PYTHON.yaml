@@ -18,8 +18,9 @@ taskGitInfoList:
 - taskName: "shell"
   taskType: "SHELL"
   taskParams: "{\"localParams\":[],\"rawScript\":\"sh ./xuxu.sh\",\"resourceList\"\
-    :[{\"id\":17}],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\"\
-    :{\"resourceId\":null,\"field\":\"rawScript\"}}"
+    :[{\"id\":17,\"resourceName\":null,\"res\":null}],\"fieldStr\":\"rawScript\",\"\
+    dataSourceList\":[],\"ideContentField\":{\"resourceId\":null,\"field\":\"rawScript\"\
+    }}"
   resourceFiles:
   - "/xuxu.sh"
   description: ""
@@ -63,8 +64,9 @@ taskGitInfoList:
 - taskName: "Python"
   taskType: "PYTHON"
   taskParams: "{\"localParams\":[],\"rawScript\":\"print(\\\"123\\\")\",\"resourceList\"\
-    :[{\"id\":7}],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\"\
-    :{\"resourceId\":7,\"field\":\"rawScript\"}}"
+    :[{\"id\":7,\"resourceName\":null,\"res\":null}],\"fieldStr\":\"rawScript\",\"\
+    dataSourceList\":[],\"ideContentField\":{\"resourceId\":7,\"field\":\"rawScript\"\
+    }}"
   resourceFiles:
   - "/test.py"
   description: ""

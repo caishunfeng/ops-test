@@ -1,0 +1,44 @@
+workflowName: "python 运算符调用成功\t"
+desc: ""
+tenantName: null
+timeoutMin: null
+executionStrategy: "PARALLEL"
+globalParams: "[]"
+labelNames: []
+cardName: null
+timingName: null
+failureStrategy: null
+warningType: null
+processInstancePriority: null
+workerGroupName: null
+envName: null
+alertGroupName: null
+estimatedEndTime: null
+taskGitInfoList:
+- taskName: "python 运算符调用成功\t"
+  taskType: "PYTHON"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"#!/usr/bin/python \\r\\n# -*- coding:\
+    \ UTF-8 -*-\\r\\na = 21\\r\\nb = 10\\r\\nc = 0\\r\\nc = a + b\\r\\nprint ((\\\"\
+    1 - c 的值为：\\\"), c)\\r\\nc = a - b\\r\\nprint ((\\\"2 - c 的值为：\\\"), c)\\r\\nc\
+    \ = a * b\\r\\nprint ((\\\"3 - c 的值为：\\\"), c)\\r\\nc = a / b\\r\\nprint ((\\\"\
+    4 - c 的值为：\\\"), c)\\r\\nc = a % b\\r\\nprint ((\\\"5 - c 的值为：\\\"), c)\\r\\n#\
+    \ 修改变量 a 、b 、c\\r\\na = 2 \\r\\nb = 3 \\r\\nc = a**b\\r\\nprint ((\\\"6 - c 的值\
+    为：\\\"), c)\\r\\na = 10\\r\\nb = 5\\r\\nc = a//b\\r\\nprint ((\\\"7 - c 的值为：\\\
+    \"), c)\",\"resourceList\":[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"\
+    ideContentField\":{\"resourceId\":null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: "python3"
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []

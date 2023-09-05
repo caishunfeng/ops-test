@@ -18,8 +18,9 @@ taskGitInfoList:
 - taskName: "wadsf"
   taskType: "SHELL"
   taskParams: "{\"localParams\":[],\"rawScript\":\"cat 资源权限.sh\",\"resourceList\"\
-    :[{\"id\":40}],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\"\
-    :{\"resourceId\":null,\"field\":\"rawScript\"}}"
+    :[{\"id\":40,\"resourceName\":null,\"res\":null}],\"fieldStr\":\"rawScript\",\"\
+    dataSourceList\":[],\"ideContentField\":{\"resourceId\":null,\"field\":\"rawScript\"\
+    }}"
   resourceFiles:
   - "/资源权限.sh"
   description: ""

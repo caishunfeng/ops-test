@@ -1,0 +1,43 @@
+workflowName: "建表 插数据 修改数据 逻辑查表\t"
+desc: ""
+tenantName: null
+timeoutMin: null
+executionStrategy: "PARALLEL"
+globalParams: "[]"
+labelNames: []
+cardName: null
+timingName: null
+failureStrategy: null
+warningType: null
+processInstancePriority: null
+workerGroupName: null
+envName: null
+alertGroupName: null
+estimatedEndTime: null
+taskGitInfoList:
+- taskName: "建表 插数据 修改数据 逻辑查表\t"
+  taskType: "SQL"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"type\":\"JDBC-Mysql\",\"\
+    datasource\":\"10757963417984\",\"database\":\"xuxutestdb\",\"sql\":\"create table\
+    \ mingdongtest3(id int primary key,name varchar(20));\\r\\ninsert into mingdongtest3\
+    \ (id,name) value(1,'gage'),(2,'gega');\\r\\nupdate mingdongtest3 set name = \\\
+    \"test_gega\\\" where id = 2;\\r\\nselect (case when id =2 then name end) as pname\
+    \ from mingdongtest2;\",\"fieldStr\":\"sql\",\"sqlType\":\"0\",\"preStatements\"\
+    :[],\"postStatements\":[],\"displayRows\":10,\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"sql\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []

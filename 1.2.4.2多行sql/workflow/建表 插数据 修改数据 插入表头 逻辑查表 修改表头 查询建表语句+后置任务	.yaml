@@ -1,0 +1,48 @@
+workflowName: "建表 插数据 修改数据 插入表头 逻辑查表 修改表头 查询建表语句+后置任务\t"
+desc: ""
+tenantName: null
+timeoutMin: null
+executionStrategy: "PARALLEL"
+globalParams: "[]"
+labelNames: []
+cardName: null
+timingName: null
+failureStrategy: null
+warningType: null
+processInstancePriority: null
+workerGroupName: null
+envName: null
+alertGroupName: null
+estimatedEndTime: null
+taskGitInfoList:
+- taskName: "前后置"
+  taskType: "SQL"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"type\":\"JDBC-Mysql\",\"\
+    datasource\":\"10758723221248\",\"database\":\"xuxutestdb\",\"sql\":\"insert into\
+    \ mingdongtest5 (id,name) value(1,'gage'),(2,'gega');\\r\\nupdate mingdongtest5\
+    \ set name = \\\"test_gega\\\" where id = 2;\\r\\nalter table mingdongtest5 add\
+    \ date_time date;\\r\\nselect * from mingdongtest5;\\r\\nupdate mingdongtest5\
+    \ set date_time = now();\\r\\nselect * from mingdongtest5;\\r\\nselect (case when\
+    \ id =2 then name end) as pname,unix_timestamp(date_time) as ptime from mingdongtest5\
+    \ where id in (2,3);\\r\\nalter table mingdongtest5 add gender varchar(20);\\\
+    r\\nshow create table mingdongtest5;\\r\\nalter table mingdongtest5 modify gender\
+    \ char(15);\\r\\nshow create table mingdongtest5;\",\"fieldStr\":\"sql\",\"sqlType\"\
+    :\"0\",\"preStatements\":[\"create table mingdongtest5(id int primary key,name\
+    \ varchar(20));\"],\"postStatements\":[\"drop table mingdongtest5;\"],\"displayRows\"\
+    :10,\"ideContentField\":{\"resourceId\":null,\"field\":\"sql\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []

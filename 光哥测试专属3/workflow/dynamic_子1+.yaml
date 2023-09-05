@@ -3,7 +3,7 @@ desc: ""
 tenantName: null
 timeoutMin: null
 executionStrategy: "PARALLEL"
-globalParams: "[{\"prop\":\"abc\",\"value\":\"1\",\"direct\":\"OUT\",\"type\":\"VARCHAR\"\
+globalParams: "[{\"prop\":\"abc\",\"value\":\"\",\"direct\":\"OUT\",\"type\":\"VARCHAR\"\
   }]"
 labelNames: []
 cardName: null
