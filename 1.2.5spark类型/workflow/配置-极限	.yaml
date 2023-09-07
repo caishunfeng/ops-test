@@ -17,11 +17,12 @@ estimatedEndTime: null
 taskGitInfoList:
 - taskName: "配置-极限\t"
   taskType: "SPARK"
-  taskParams: "{\"localParams\":[],\"resourceList\":[],\"fieldStr\":\"rawScript\"\
-    ,\"programType\":\"JAVA\",\"mainClass\":\"WordCount\",\"mainJar\":{\"id\":14},\"\
-    deployMode\":\"cluster\",\"driverCores\":20,\"driverMemory\":\"8G\",\"numExecutors\"\
-    :20,\"executorMemory\":\"16G\",\"executorCores\":20,\"ideContentField\":{\"resourceId\"\
-    :null,\"field\":\"rawScript\"}}"
+  taskParams: "{\"localParams\":[],\"resourceList\":[{\"id\":14,\"resourceName\":null,\"\
+    res\":null}],\"fieldStr\":\"rawScript\",\"programType\":\"JAVA\",\"mainClass\"\
+    :\"WordCount\",\"mainJar\":{\"id\":14},\"deployMode\":\"cluster\",\"driverCores\"\
+    :20,\"driverMemory\":\"8G\",\"numExecutors\":20,\"executorMemory\":\"16G\",\"\
+    executorCores\":20,\"ideContentField\":{\"resourceId\":null,\"field\":\"rawScript\"\
+    }}"
   resourceFiles:
   - "/WordCount.jar"
   description: ""

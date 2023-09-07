@@ -17,11 +17,11 @@ estimatedEndTime: null
 taskGitInfoList:
 - taskName: "test"
   taskType: "JAR"
-  taskParams: "{\"localParams\":[],\"resourceList\":[],\"programType\":\"CLASS\",\"\
-    options\":\"-server -Xms1g -Xmx1g -Xmn512m -XX:+PrintGCDetails -Xloggc:gc.log\
-    \ -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=dump.hprof\",\"cpResIds\":[41],\"\
-    mainClass\":\"org.whaleops.license.GetLicenseMachineID\",\"mainArgs\":\"\",\"\
-    ideContentField\":{\"resourceId\":null,\"field\":null}}"
+  taskParams: "{\"localParams\":[],\"resourceList\":[{\"id\":41,\"resourceName\":null,\"\
+    res\":null}],\"programType\":\"CLASS\",\"options\":\"-server -Xms1g -Xmx1g -Xmn512m\
+    \ -XX:+PrintGCDetails -Xloggc:gc.log -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=dump.hprof\"\
+    ,\"cpResIds\":[41],\"mainClass\":\"org.whaleops.license.GetLicenseMachineID\"\
+    ,\"mainArgs\":\"\",\"ideContentField\":{\"resourceId\":null,\"field\":null}}"
   resourceFiles:
   - "/whale-license-client.jar"
   description: ""
