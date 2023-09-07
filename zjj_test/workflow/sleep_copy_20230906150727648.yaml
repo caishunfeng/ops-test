@@ -1,4 +1,4 @@
-workflowName: "1"
+workflowName: "sleep_copy_20230906150727648"
 desc: ""
 tenantName: null
 timeoutMin: null
@@ -6,18 +6,18 @@ executionStrategy: "PARALLEL"
 globalParams: "[]"
 labelNames: []
 cardName: null
-timingName: null
-failureStrategy: null
-warningType: null
-processInstancePriority: null
-workerGroupName: null
+timingName: "test-zjj"
+failureStrategy: "CONTINUE"
+warningType: "NONE"
+processInstancePriority: "MEDIUM"
+workerGroupName: "default"
 envName: null
 alertGroupName: null
 estimatedEndTime: null
 taskGitInfoList:
-- taskName: "echo"
+- taskName: "sleep_copy_20230906150727648"
   taskType: "SHELL"
-  taskParams: "{\"localParams\":[],\"rawScript\":\"echo 2\",\"resourceList\":[],\"\
+  taskParams: "{\"localParams\":[],\"rawScript\":\"sleep 60\",\"resourceList\":[],\"\
     fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
     :null,\"field\":\"rawScript\"}}"
   resourceFiles: null

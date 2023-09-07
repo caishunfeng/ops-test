@@ -1,4 +1,4 @@
-workflowName: "1"
+workflowName: "dddddd2"
 desc: ""
 tenantName: null
 timeoutMin: null
@@ -15,11 +15,13 @@ envName: null
 alertGroupName: null
 estimatedEndTime: null
 taskGitInfoList:
-- taskName: "echo"
-  taskType: "SHELL"
-  taskParams: "{\"localParams\":[],\"rawScript\":\"echo 2\",\"resourceList\":[],\"\
-    fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
-    :null,\"field\":\"rawScript\"}}"
+- taskName: "fecho_copy_20230907151919675"
+  taskType: "DYNAMIC"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"processDefinitionCode\":10833971333888,\"\
+    maxNumOfSubWorkflowInstances\":1024,\"degreeOfParallelism\":1,\"filterCondition\"\
+    :\"\",\"listParameters\":[{\"name\":\"name1\",\"value\":\"6.7.8.9.10.11.12.13\"\
+    ,\"separator\":\".\",\"disabled\":true}],\"ideContentField\":{\"resourceId\":null,\"\
+    field\":null}}"
   resourceFiles: null
   description: ""
   taskPriority: "MEDIUM"

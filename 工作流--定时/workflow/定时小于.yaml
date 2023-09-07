@@ -1,4 +1,4 @@
-workflowName: "1"
+workflowName: "定时小于"
 desc: ""
 tenantName: null
 timeoutMin: null
@@ -17,7 +17,7 @@ estimatedEndTime: null
 taskGitInfoList:
 - taskName: "echo"
   taskType: "SHELL"
-  taskParams: "{\"localParams\":[],\"rawScript\":\"echo 2\",\"resourceList\":[],\"\
+  taskParams: "{\"localParams\":[],\"rawScript\":\"sleep 60\",\"resourceList\":[],\"\
     fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
     :null,\"field\":\"rawScript\"}}"
   resourceFiles: null
@@ -31,7 +31,7 @@ taskGitInfoList:
   locationX: null
   locationY: null
   workerGroup: "default"
-  env: "env-光哥"
+  env: null
   taskGroup: null
   taskGroupPriority: null
   localParams: null

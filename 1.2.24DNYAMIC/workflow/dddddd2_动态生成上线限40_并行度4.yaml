@@ -1,4 +1,4 @@
-workflowName: "1"
+workflowName: "dddddd2_动态生成上线限40_并行度4"
 desc: ""
 tenantName: null
 timeoutMin: null
@@ -15,11 +15,13 @@ envName: null
 alertGroupName: null
 estimatedEndTime: null
 taskGitInfoList:
-- taskName: "echo"
-  taskType: "SHELL"
-  taskParams: "{\"localParams\":[],\"rawScript\":\"echo 2\",\"resourceList\":[],\"\
-    fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
-    :null,\"field\":\"rawScript\"}}"
+- taskName: "fecho_copy_20230907154357389"
+  taskType: "DYNAMIC"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"processDefinitionCode\":10834083014912,\"\
+    maxNumOfSubWorkflowInstances\":40,\"degreeOfParallelism\":4,\"filterCondition\"\
+    :\"\",\"listParameters\":[{\"name\":\"name1\",\"value\":\"1,2,3,5,6,7\",\"separator\"\
+    :\" , \",\"disabled\":true},{\"name\":\"name2\",\"value\":\"6.7.8.9.10.11.12.13\"\
+    ,\"separator\":\".\"}],\"ideContentField\":{\"resourceId\":null,\"field\":null}}"
   resourceFiles: null
   description: ""
   taskPriority: "MEDIUM"

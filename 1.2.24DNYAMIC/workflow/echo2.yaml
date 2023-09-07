@@ -1,4 +1,4 @@
-workflowName: "1"
+workflowName: "echo2"
 desc: ""
 tenantName: null
 timeoutMin: null
@@ -17,8 +17,10 @@ estimatedEndTime: null
 taskGitInfoList:
 - taskName: "echo"
   taskType: "SHELL"
-  taskParams: "{\"localParams\":[],\"rawScript\":\"echo 2\",\"resourceList\":[],\"\
-    fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+  taskParams: "{\"localParams\":[{\"prop\":\"name1\",\"direct\":\"IN\",\"type\":\"\
+    VARCHAR\",\"value\":\"\"},{\"prop\":\"name2\",\"direct\":\"IN\",\"type\":\"VARCHAR\"\
+    ,\"value\":\"\"}],\"rawScript\":\"echo ${name1}\\r\\necho ${name2}\",\"resourceList\"\
+    :[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
     :null,\"field\":\"rawScript\"}}"
   resourceFiles: null
   description: ""
@@ -31,7 +33,7 @@ taskGitInfoList:
   locationX: null
   locationY: null
   workerGroup: "default"
-  env: "env-光哥"
+  env: null
   taskGroup: null
   taskGroupPriority: null
   localParams: null

@@ -1,4 +1,4 @@
-workflowName: "1"
+workflowName: "sql_copy_20230906154602332"
 desc: ""
 tenantName: null
 timeoutMin: null
@@ -15,11 +15,13 @@ envName: null
 alertGroupName: null
 estimatedEndTime: null
 taskGitInfoList:
-- taskName: "echo"
-  taskType: "SHELL"
-  taskParams: "{\"localParams\":[],\"rawScript\":\"echo 2\",\"resourceList\":[],\"\
-    fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
-    :null,\"field\":\"rawScript\"}}"
+- taskName: "select_copy_20230906154602332"
+  taskType: "SQL"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"type\":\"JDBC-Mysql\",\"\
+    datasource\":\"10757963417984\",\"database\":\"xuxutestdb\",\"sql\":\"select *\
+    \ from lyctest;\",\"fieldStr\":\"sql\",\"sqlType\":\"0\",\"preStatements\":[],\"\
+    postStatements\":[],\"displayRows\":10,\"ideContentField\":{\"resourceId\":null,\"\
+    field\":\"sql\"}}"
   resourceFiles: null
   description: ""
   taskPriority: "MEDIUM"

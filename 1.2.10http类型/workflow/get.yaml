@@ -1,4 +1,4 @@
-workflowName: "1"
+workflowName: "get"
 desc: ""
 tenantName: null
 timeoutMin: null
@@ -15,11 +15,12 @@ envName: null
 alertGroupName: null
 estimatedEndTime: null
 taskGitInfoList:
-- taskName: "echo"
-  taskType: "SHELL"
-  taskParams: "{\"localParams\":[],\"rawScript\":\"echo 2\",\"resourceList\":[],\"\
-    fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
-    :null,\"field\":\"rawScript\"}}"
+- taskName: "get"
+  taskType: "HTTP"
+  taskParams: "{\"localParams\":[],\"resourceList\":[],\"httpMethod\":\"GET\",\"httpCheckCondition\"\
+    :\"STATUS_CODE_DEFAULT\",\"httpParams\":[],\"url\":\"http://www.baidu.com\",\"\
+    condition\":\"success\",\"connectTimeout\":60000,\"socketTimeout\":60000,\"ideContentField\"\
+    :{\"resourceId\":null,\"field\":null}}"
   resourceFiles: null
   description: ""
   taskPriority: "MEDIUM"

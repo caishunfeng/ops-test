@@ -1,4 +1,4 @@
-workflowName: "1"
+workflowName: "定时_天"
 desc: ""
 tenantName: null
 timeoutMin: null
@@ -6,18 +6,18 @@ executionStrategy: "PARALLEL"
 globalParams: "[]"
 labelNames: []
 cardName: null
-timingName: null
-failureStrategy: null
-warningType: null
-processInstancePriority: null
-workerGroupName: null
+timingName: "天"
+failureStrategy: "CONTINUE"
+warningType: "NONE"
+processInstancePriority: "MEDIUM"
+workerGroupName: "default"
 envName: null
 alertGroupName: null
 estimatedEndTime: null
 taskGitInfoList:
-- taskName: "echo"
+- taskName: "echo_copy_20230906180330756"
   taskType: "SHELL"
-  taskParams: "{\"localParams\":[],\"rawScript\":\"echo 2\",\"resourceList\":[],\"\
+  taskParams: "{\"localParams\":[],\"rawScript\":\"echo 1\",\"resourceList\":[],\"\
     fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
     :null,\"field\":\"rawScript\"}}"
   resourceFiles: null
@@ -31,7 +31,7 @@ taskGitInfoList:
   locationX: null
   locationY: null
   workerGroup: "default"
-  env: "env-光哥"
+  env: null
   taskGroup: null
   taskGroupPriority: null
   localParams: null

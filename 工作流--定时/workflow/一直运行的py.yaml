@@ -1,4 +1,4 @@
-workflowName: "1"
+workflowName: "一直运行的py"
 desc: ""
 tenantName: null
 timeoutMin: null
@@ -15,11 +15,12 @@ envName: null
 alertGroupName: null
 estimatedEndTime: null
 taskGitInfoList:
-- taskName: "echo"
-  taskType: "SHELL"
-  taskParams: "{\"localParams\":[],\"rawScript\":\"echo 2\",\"resourceList\":[],\"\
-    fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
-    :null,\"field\":\"rawScript\"}}"
+- taskName: "py"
+  taskType: "PYTHON"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"import time\\r\\nprint(1111)\\\
+    r\\ntime.sleep(100)\\r\\nprint(2222)\\r\\n\",\"resourceList\":[],\"fieldStr\"\
+    :\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\":null,\"\
+    field\":\"rawScript\"}}"
   resourceFiles: null
   description: ""
   taskPriority: "MEDIUM"
@@ -31,7 +32,7 @@ taskGitInfoList:
   locationX: null
   locationY: null
   workerGroup: "default"
-  env: "env-光哥"
+  env: "python3"
   taskGroup: null
   taskGroupPriority: null
   localParams: null

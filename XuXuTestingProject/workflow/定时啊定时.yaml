@@ -8,7 +8,7 @@ labelNames:
 - "001"
 - "003"
 - "标签2"
-cardName: null
+cardName: "dep测试牌"
 timingName: "定时啊定时"
 failureStrategy: "CONTINUE"
 warningType: "NONE"
@@ -22,6 +22,27 @@ taskGitInfoList:
   taskType: "SHELL"
   taskParams: "{\"localParams\":[],\"rawScript\":\"echo\\\"date666\\\"\\ndate\",\"\
     resourceList\":[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\"\
+    :{\"resourceId\":null,\"field\":\"rawScript\"}}"
+  resourceFiles: null
+  description: ""
+  taskPriority: "MEDIUM"
+  failRetryTimes: 0
+  failRetryInterval: 1
+  timeout: 0
+  timeoutNotifyStrategy: null
+  delayTime: 0
+  locationX: null
+  locationY: null
+  workerGroup: "default"
+  env: null
+  taskGroup: null
+  taskGroupPriority: null
+  localParams: null
+  preTasks: []
+- taskName: "shell_1r2"
+  taskType: "SHELL"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"echo\\\"date666\\\"\\ndate111\"\
+    ,\"resourceList\":[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\"\
     :{\"resourceId\":null,\"field\":\"rawScript\"}}"
   resourceFiles: null
   description: ""

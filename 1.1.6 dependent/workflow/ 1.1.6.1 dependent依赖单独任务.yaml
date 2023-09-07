@@ -3,7 +3,7 @@ desc: " "
 tenantName: null
 timeoutMin: null
 executionStrategy: "PARALLEL"
-globalParams: " []"
+globalParams: "[]"
 labelNames: []
 cardName: null
 timingName: null
