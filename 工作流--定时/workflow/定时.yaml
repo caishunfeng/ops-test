@@ -5,7 +5,7 @@ timeoutMin: null
 executionStrategy: "PARALLEL"
 globalParams: "[]"
 labelNames: []
-cardName: null
+cardName: "工作日"
 timingName: null
 failureStrategy: null
 warningType: null
@@ -17,8 +17,8 @@ estimatedEndTime: null
 taskGitInfoList:
 - taskName: "echo"
   taskType: "SHELL"
-  taskParams: "{\"localParams\":[],\"rawScript\":\"sleep 120\",\"resourceList\":[],\"\
-    fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+  taskParams: "{\"localParams\":[],\"rawScript\":\"sleep ${card}\",\"resourceList\"\
+    :[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
     :null,\"field\":\"rawScript\"}}"
   resourceFiles: null
   description: ""
