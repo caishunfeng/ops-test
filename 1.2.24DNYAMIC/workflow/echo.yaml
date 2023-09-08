@@ -17,10 +17,9 @@ estimatedEndTime: null
 taskGitInfoList:
 - taskName: "echo"
   taskType: "SHELL"
-  taskParams: "{\"localParams\":[{\"prop\":\"name1\",\"direct\":\"IN\",\"type\":\"\
-    VARCHAR\",\"value\":\"\"}],\"rawScript\":\"echo1\",\"resourceList\":[],\"fieldStr\"\
-    :\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\":null,\"\
-    field\":\"rawScript\"}}"
+  taskParams: "{\"localParams\":[],\"rawScript\":\"echo 1\",\"resourceList\":[],\"\
+    fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\":{\"resourceId\"\
+    :null,\"field\":\"rawScript\"}}"
   resourceFiles: null
   description: ""
   taskPriority: "MEDIUM"
