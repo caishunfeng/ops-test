@@ -20,8 +20,13 @@ estimatedEndTime: null
 taskGitInfoList:
 - taskName: "shell"
   taskType: "SHELL"
+<<<<<<< HEAD
   taskParams: "{\"localParams\":[],\"rawScript\":\"echo\\\"date666888888\\\"\\ndate\"\
     ,\"resourceList\":[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\"\
+=======
+  taskParams: "{\"localParams\":[],\"rawScript\":\"echo\\\"date6667777799999999\\\"\\ndate\",\"\
+    resourceList\":[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\"\
+>>>>>>> branch 'master' of https://github.com/caishunfeng/ops-test.git
     :{\"resourceId\":null,\"field\":\"rawScript\"}}"
   resourceFiles: null
   description: ""

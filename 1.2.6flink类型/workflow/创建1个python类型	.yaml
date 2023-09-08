@@ -17,11 +17,12 @@ estimatedEndTime: null
 taskGitInfoList:
 - taskName: "创建1个python类型\t"
   taskType: "FLINK"
-  taskParams: "{\"localParams\":[],\"resourceList\":[],\"fieldStr\":\"rawScript\"\
-    ,\"programType\":\"PYTHON\",\"mainClass\":\"\",\"mainJar\":{\"id\":7},\"deployMode\"\
-    :\"cluster\",\"flinkVersion\":\"<1.10\",\"jobManagerMemory\":\"1G\",\"taskManagerMemory\"\
-    :\"2G\",\"slot\":1,\"taskManager\":2,\"parallelism\":1,\"ideContentField\":{\"\
-    resourceId\":null,\"field\":\"rawScript\"}}"
+  taskParams: "{\"localParams\":[],\"resourceList\":[{\"id\":7,\"resourceName\":null,\"\
+    res\":null}],\"fieldStr\":\"rawScript\",\"programType\":\"PYTHON\",\"mainClass\"\
+    :\"\",\"mainJar\":{\"id\":7},\"deployMode\":\"cluster\",\"flinkVersion\":\"<1.10\"\
+    ,\"jobManagerMemory\":\"1G\",\"taskManagerMemory\":\"2G\",\"slot\":1,\"taskManager\"\
+    :2,\"parallelism\":1,\"ideContentField\":{\"resourceId\":null,\"field\":\"rawScript\"\
+    }}"
   resourceFiles:
   - "/test.py"
   description: ""

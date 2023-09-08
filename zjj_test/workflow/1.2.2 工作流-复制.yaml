@@ -19,8 +19,8 @@ taskGitInfoList:
 - taskName: "echo"
   taskType: "SHELL"
   taskParams: "{\"localParams\":[],\"rawScript\":\"echo 1\",\"resourceList\":[{\"\
-    id\":43}],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\"\
-    :{\"resourceId\":null,\"field\":\"rawScript\"}}"
+    id\":43,\"resourceName\":null,\"res\":null}],\"fieldStr\":\"rawScript\",\"dataSourceList\"\
+    :[],\"ideContentField\":{\"resourceId\":null,\"field\":\"rawScript\"}}"
   resourceFiles:
   - "/zjj-test.sh"
   description: ""
@@ -193,7 +193,7 @@ taskGitInfoList:
   delayTime: 0
   locationX: null
   locationY: null
-  workerGroup: null
+  workerGroup: "default"
   env: null
   taskGroup: null
   taskGroupPriority: null
@@ -216,7 +216,7 @@ taskGitInfoList:
   delayTime: 0
   locationX: null
   locationY: null
-  workerGroup: null
+  workerGroup: "default"
   env: null
   taskGroup: null
   taskGroupPriority: null
@@ -225,11 +225,12 @@ taskGitInfoList:
   - "echo"
 - taskName: "flink"
   taskType: "FLINK"
-  taskParams: "{\"localParams\":[],\"resourceList\":[],\"fieldStr\":\"rawScript\"\
-    ,\"programType\":\"SCALA\",\"mainClass\":\"asfasfa\",\"mainJar\":{\"id\":12},\"\
-    deployMode\":\"local\",\"flinkVersion\":\"<1.10\",\"jobManagerMemory\":\"1G\"\
-    ,\"taskManagerMemory\":\"2G\",\"slot\":1,\"taskManager\":2,\"parallelism\":1,\"\
-    ideContentField\":{\"resourceId\":null,\"field\":\"rawScript\"}}"
+  taskParams: "{\"localParams\":[],\"resourceList\":[{\"id\":12,\"resourceName\":null,\"\
+    res\":null}],\"fieldStr\":\"rawScript\",\"programType\":\"SCALA\",\"mainClass\"\
+    :\"asfasfa\",\"mainJar\":{\"id\":12},\"deployMode\":\"local\",\"flinkVersion\"\
+    :\"<1.10\",\"jobManagerMemory\":\"1G\",\"taskManagerMemory\":\"2G\",\"slot\":1,\"\
+    taskManager\":2,\"parallelism\":1,\"ideContentField\":{\"resourceId\":null,\"\
+    field\":\"rawScript\"}}"
   resourceFiles:
   - "/spark-examples_2.12-3.0.0.jar"
   description: ""
@@ -250,11 +251,11 @@ taskGitInfoList:
   - "echo"
 - taskName: "spark"
   taskType: "SPARK"
-  taskParams: "{\"localParams\":[],\"resourceList\":[],\"fieldStr\":\"rawScript\"\
-    ,\"programType\":\"SCALA\",\"mainClass\":\"safest\",\"mainJar\":{\"id\":12},\"\
-    deployMode\":\"local\",\"driverCores\":1,\"driverMemory\":\"512M\",\"numExecutors\"\
-    :2,\"executorMemory\":\"2G\",\"executorCores\":2,\"ideContentField\":{\"resourceId\"\
-    :null,\"field\":\"rawScript\"}}"
+  taskParams: "{\"localParams\":[],\"resourceList\":[{\"id\":12,\"resourceName\":null,\"\
+    res\":null}],\"fieldStr\":\"rawScript\",\"programType\":\"SCALA\",\"mainClass\"\
+    :\"safest\",\"mainJar\":{\"id\":12},\"deployMode\":\"local\",\"driverCores\":1,\"\
+    driverMemory\":\"512M\",\"numExecutors\":2,\"executorMemory\":\"2G\",\"executorCores\"\
+    :2,\"ideContentField\":{\"resourceId\":null,\"field\":\"rawScript\"}}"
   resourceFiles:
   - "/spark-examples_2.12-3.0.0.jar"
   description: ""
@@ -275,9 +276,9 @@ taskGitInfoList:
   - "echo"
 - taskName: "mr"
   taskType: "MR"
-  taskParams: "{\"localParams\":[],\"resourceList\":[],\"programType\":\"SCALA\",\"\
-    mainClass\":\"asfdasf\",\"mainJar\":{\"id\":12},\"ideContentField\":{\"resourceId\"\
-    :null,\"field\":null}}"
+  taskParams: "{\"localParams\":[],\"resourceList\":[{\"id\":12,\"resourceName\":null,\"\
+    res\":null}],\"programType\":\"SCALA\",\"mainClass\":\"asfdasf\",\"mainJar\":{\"\
+    id\":12},\"ideContentField\":{\"resourceId\":null,\"field\":null}}"
   resourceFiles:
   - "/spark-examples_2.12-3.0.0.jar"
   description: ""
@@ -393,7 +394,7 @@ taskGitInfoList:
   delayTime: 0
   locationX: null
   locationY: null
-  workerGroup: null
+  workerGroup: "default"
   env: null
   taskGroup: null
   taskGroupPriority: null
