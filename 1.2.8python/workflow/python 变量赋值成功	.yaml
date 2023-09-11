@@ -17,13 +17,12 @@ estimatedEndTime: null
 taskGitInfoList:
 - taskName: "python 变量赋值成功\t"
   taskType: "PYTHON"
-  taskParams: "{\"localParams\":[],\"rawScript\":\"#!/usr/bin/python \\r\\n# -*- coding:\
-    \ UTF-8 -*-\\r\\ncounter = 100 # 赋值整型变量\\r\\nmiles = 1000.0 # 浮点型\\r\\nname =\
-    \ \\\"John\\\" # 字符串\\r\\nprint (counter)\\r\\nprint (miles)\\r\\nprint (name)\"\
-    ,\"resourceList\":[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\"\
-    :{\"resourceId\":null,\"field\":\"rawScript\"}}"
+  taskParams: "{\"localParams\":[],\"varPool\":null,\"rawScript\":\"#!/usr/bin/python\
+    \ \\r\\n# -*- coding: UTF-8 -*-\\r\\ncounter = 100 # 赋值整型变量\\r\\nmiles = 1000.0\
+    \ # 浮点型\\r\\nname = \\\"John\\\" # 字符串\\r\\nprint (counter)\\r\\nprint (miles)\\\
+    r\\nprint (name)\",\"resourceList\":[],\"dataSourceList\":null}"
   resourceFiles: null
-  description: ""
+  description: null
   taskPriority: "MEDIUM"
   failRetryTimes: 0
   failRetryInterval: 1
@@ -40,13 +39,12 @@ taskGitInfoList:
   preTasks: []
 - taskName: "python 变量赋值成功1"
   taskType: "PYTHON"
-  taskParams: "{\"localParams\":[],\"rawScript\":\"#!/usr/bin/python \\r\\n# -*- coding:\
-    \ UTF-8 -*-\\r\\ncounter = 100 # 赋值整型变量\\r\\nmiles = 1000.0 # 浮点型\\r\\nname =\
-    \ \\\"John\\\" # 字符串\\r\\nprint counter\\r\\nprint miles\\r\\nprint name\",\"\
-    resourceList\":[],\"fieldStr\":\"rawScript\",\"dataSourceList\":[],\"ideContentField\"\
-    :{\"resourceId\":null,\"field\":\"rawScript\"}}"
+  taskParams: "{\"localParams\":[],\"varPool\":null,\"rawScript\":\"#!/usr/bin/python\
+    \ \\r\\n# -*- coding: UTF-8 -*-\\r\\ncounter = 100 # 赋值整型变量\\r\\nmiles = 1000.0\
+    \ # 浮点型\\r\\nname = \\\"John\\\" # 字符串\\r\\nprint counter\\r\\nprint miles\\r\\\
+    nprint name\",\"resourceList\":[],\"dataSourceList\":null}"
   resourceFiles: null
-  description: ""
+  description: null
   taskPriority: "MEDIUM"
   failRetryTimes: 0
   failRetryInterval: 1
